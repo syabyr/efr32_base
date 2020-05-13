@@ -1,19 +1,20 @@
-/* Linker script for Silicon Labs EFR32MG1P devices */
-/*                                                                  */
-/* This file is subject to the license terms as defined in ARM's    */
-/* CMSIS END USER LICENSE AGREEMENT.pdf, governing the use of       */
-/* Example Code.                                                    */
-/*                                                                  */
-/* Silicon Laboratories, Inc. 2015                                  */
-/*                                                                  */
-/* Version 4.1.1 */
-/*                                                                  */
+/*       Linker script for Silicon Labs EFM/EFR/EZR devices            */
+/*                                                                     */
+/* This file is subject to the license terms as defined in ARM's       */
+/* CMSIS END USER LICENSE AGREEMENT.pdf, governing the use of          */
+/* Example Code.                                                       */
+/*                                                                     */
+/* Copyright 2016 Silicon Laboratories, Inc. http://www.silabs.com     */
+/*                                                                     */
+/* Version 5.0.0 */
+/*                                                                     */
+
 MEMORY
 {
-  FLASH_BOOTLOADER (rx) : ORIGIN = 0x0000, LENGTH = 0x4000
-  FLASH (rx) : ORIGIN = 0x4000, LENGTH = 0x00040000-0x4000
-  RAM (rwx)  : ORIGIN = 0x20000000, LENGTH = 0x00007C00
+	FLASH (rx) : ORIGIN = 0x0, LENGTH = 0x40000 /* 256k */
+	RAM (rwx) : ORIGIN = 0x20000000, LENGTH = 0x8000 /* 32k */
 }
+
 
 /* Linker script to place sections and symbol values. Should be used together
  * with other linker script that defines memory regions FLASH and RAM.
@@ -51,29 +52,13 @@ ENTRY(Reset_Handler)
 
 SECTIONS
 {
-  .text_bootloader :
+  .text :
   {
-	KEEP(*(.binbootloader*))
-    /* Align to flash page boundary*/
-    . = ALIGN(0x4000);
-  }> FLASH_BOOTLOADER 
-  .text_apploader :
-  {
-	KEEP(*(.binapploader*))
-  }> FLASH  
-  .text_signature :
-  {
-    . = ALIGN(2048);
-  }> FLASH  
-    
-  __text_start__ = .;
-
-  .text_application :
-  {	
     KEEP(*(.vectors))
     __Vectors_End = .;
     __Vectors_Size = __Vectors_End - __Vectors;
     __end__ = .;
+
     *(.text*)
 
     KEEP(*(.init))
@@ -96,37 +81,57 @@ SECTIONS
     *(.rodata*)
 
     KEEP(*(.eh_frame*))
-	. = ALIGN(4);
-  } > FLASH  
+  } > FLASH
 
-  .text_application_ARM.extab :
+  .ARM.extab :
   {
     *(.ARM.extab* .gnu.linkonce.armextab.*)
   } > FLASH
 
   __exidx_start = .;
-  .text_application_ARM.exidx :
+  .ARM.exidx :
   {
     *(.ARM.exidx* .gnu.linkonce.armexidx.*)
   } > FLASH
   __exidx_end = .;
-  
-  __etext = .;
-  /* .stack_dummy section doesn't contains any symbols. It is only
-   * used for linker to calculate size of stack sections, and assign
-   * values to stack symbols later */
-  .stack_dummy (COPY):
-  {
-    KEEP(*(.stack*))
-  } > RAM
-  
-  /* Set stack top to end of RAM, and stack limit move down by
-   * size of stack_dummy section */
-  __StackTop = ORIGIN(RAM) + SIZEOF(.stack_dummy);
-  __StackLimit = ORIGIN(RAM);
-  PROVIDE(__stack = __StackTop);
 
-  .text_application_data : AT (__etext)
+  /* To copy multiple ROM to RAM sections,
+   * uncomment .copy.table section and,
+   * define __STARTUP_COPY_MULTIPLE in startup_ARMCMx.S */
+  /*
+  .copy.table :
+  {
+    . = ALIGN(4);
+    __copy_table_start__ = .;
+    LONG (__etext)
+    LONG (__data_start__)
+    LONG (__data_end__ - __data_start__)
+    LONG (__etext2)
+    LONG (__data2_start__)
+    LONG (__data2_end__ - __data2_start__)
+    __copy_table_end__ = .;
+  } > FLASH
+  */
+
+  /* To clear multiple BSS sections,
+   * uncomment .zero.table section and,
+   * define __STARTUP_CLEAR_BSS_MULTIPLE in startup_ARMCMx.S */
+  /*
+  .zero.table :
+  {
+    . = ALIGN(4);
+    __zero_table_start__ = .;
+    LONG (__bss_start__)
+    LONG (__bss_end__ - __bss_start__)
+    LONG (__bss2_start__)
+    LONG (__bss2_end__ - __bss2_start__)
+    __zero_table_end__ = .;
+  } > FLASH
+  */
+
+  __etext = .;
+
+  .data : AT (__etext)
   {
     __data_start__ = .;
     *(vtable)
@@ -160,8 +165,8 @@ SECTIONS
     __data_end__ = .;
 
   } > RAM
-  
-  .bss . :
+
+  .bss :
   {
     . = ALIGN(4);
     __bss_start__ = .;
@@ -181,15 +186,23 @@ SECTIONS
     __HeapLimit = .;
   } > RAM
 
-  /* .nvm_dummy section doesn't contains any symbols. It is only
-   * used for linker to calculate size of nvm section, and assign
-   * values to nvm symbols later */
-  .nvm_dummy (DSECT):
+  /* .stack_dummy section doesn't contains any symbols. It is only
+   * used for linker to calculate size of stack sections, and assign
+   * values to stack symbols later */
+  .stack_dummy (COPY):
   {
-    KEEP(*(.simee));
-  } > FLASH
-  
-  /* Set NVM to end of FLASH*/
-  __nvm3Base = 0x00040000- SIZEOF(.nvm_dummy);  
-  ASSERT((__etext + SIZEOF(.text_application_data)) <= __nvm3Base, "FLASH memory overlapped with NVM section.")
+    KEEP(*(.stack*))
+  } > RAM
+
+  /* Set stack top to end of RAM, and stack limit move down by
+   * size of stack_dummy section */
+  __StackTop = ORIGIN(RAM) + LENGTH(RAM);
+  __StackLimit = __StackTop - SIZEOF(.stack_dummy);
+  PROVIDE(__stack = __StackTop);
+
+  /* Check if data + heap + stack exceeds RAM limit */
+  ASSERT(__StackLimit >= __HeapLimit, "region RAM overflowed with stack")
+
+  /* Check if FLASH usage exceeds FLASH size */
+  ASSERT( LENGTH(FLASH) >= (__etext + SIZEOF(.data)), "FLASH memory overflowed !")
 }
