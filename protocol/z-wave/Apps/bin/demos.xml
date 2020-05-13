@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<demos>
+  <!-- Standalone bootloader image -->
+  <demo name="bootloader_ZGM130S_OTA" label="Standalone OTA bootloader for  zgm130 and zg13 modules">
+    <property key="blurb" value="Standalone OTA bootloader for ZGM130S and ZG13 modules"/>
+    <property key="category" value="Bootloader"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.* .*efr32zg13p531f512gm32.* .*efr32zg13p531f512gm48.*"/>
+    <property key="imageFile" value="OTA-bootloader-fg13-combined.s37"/>
+    <description>OTA Bootloader for ZGM130S and ZG13 modules</description>
+  </demo>
+  <demo name="bootloader_ZGM130S_OTW" label="Standalone OTW bootloader for ZGM130S module">
+    <property key="blurb" value="Standalone OTW bootloader for ZGM130S module"/>
+    <property key="category" value="Bootloader"/>
+    <property key="priority" value="2"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="OTW-bootloader-fg13-combined.s37"/>
+    <description>OTW Bootloader for ZGM130S module</description>
+  </demo>
+  <demo name="bootloader_ZG14_OTW" label="Standalone OTW bootloader for ZG14 module">
+    <property key="blurb" value="Standalone OTW bootloader for ZG14 module"/>
+    <property key="category" value="Bootloader"/>
+    <property key="priority" value="3"/>
+    <property key="core.partCompatibility" value="mcu.arm.efr32.zg14.*"/>
+    <property key="imageFile" value="OTW-bootloader-fg14-combined.s37"/>
+    <description>OTW Bootloader for ZG14 module</description>
+  </demo>
+
+  <!-- SwitchOnOff application -->
+  <!-- EU Region -->
+  <demo name="ZW_SwitchOnOff_7.13.3_REGION_EU" label="Z-Wave SwitchOnOff EU Region 7.13.3">
+    <property key="blurb" value="Z-Wave SwitchOnOff EU Region 7.13.3"/>
+    <property key="category" value="Switch On/Off"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SwitchOnOff_7.13.3_260_ZGM130S_REGION_EU.hex"/>
+    <description>Z-Wave SwitchOnOff EU Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SwitchOnOff binary for EU Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- US Region -->
+  <demo name="ZW_SwitchOnOff_7.13.3_REGION_US" label="Z-Wave SwitchOnOff US Region 7.13.3">
+    <property key="blurb" value="Z-Wave SwitchOnOff US Region 7.13.3"/>
+    <property key="category" value="Switch On/Off"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SwitchOnOff_7.13.3_260_ZGM130S_REGION_US.hex"/>
+    <description>Z-Wave SwitchOnOff US Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SwitchOnOff binary for US Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- ANZ Region -->
+  <demo name="ZW_SwitchOnOff_7.13.3_REGION_ANZ" label="Z-Wave SwitchOnOff ANZ Region 7.13.3">
+    <property key="blurb" value="Z-Wave SwitchOnOff ANZ Region 7.13.3"/>
+    <property key="category" value="Switch On/Off"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SwitchOnOff_7.13.3_260_ZGM130S_REGION_ANZ.hex"/>
+    <description>Z-Wave SwitchOnOff ANZ Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SwitchOnOff binary for ANZ Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- HK Region -->
+  <demo name="ZW_SwitchOnOff_7.13.3_REGION_HK" label="Z-Wave SwitchOnOff HK Region 7.13.3">
+    <property key="blurb" value="Z-Wave SwitchOnOff HK Region 7.13.3"/>
+    <property key="category" value="Switch On/Off"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SwitchOnOff_7.13.3_260_ZGM130S_REGION_HK.hex"/>
+    <description>Z-Wave SwitchOnOff HK Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SwitchOnOff binary for HK Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- IN Region -->
+  <demo name="ZW_SwitchOnOff_7.13.3_REGION_IN" label="Z-Wave SwitchOnOff IN Region 7.13.3">
+    <property key="blurb" value="Z-Wave SwitchOnOff IN Region 7.13.3"/>
+    <property key="category" value="Switch On/Off"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SwitchOnOff_7.13.3_260_ZGM130S_REGION_IN.hex"/>
+    <description>Z-Wave SwitchOnOff IN Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SwitchOnOff binary for IN Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- IL Region -->
+  <demo name="ZW_SwitchOnOff_7.13.3_REGION_IL" label="Z-Wave SwitchOnOff IL Region 7.13.3">
+    <property key="blurb" value="Z-Wave SwitchOnOff IL Region 7.13.3"/>
+    <property key="category" value="Switch On/Off"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SwitchOnOff_7.13.3_260_ZGM130S_REGION_IL.hex"/>
+    <description>Z-Wave SwitchOnOff IL Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SwitchOnOff binary for IL Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- RU Region -->
+  <demo name="ZW_SwitchOnOff_7.13.3_REGION_RU" label="Z-Wave SwitchOnOff RU Region 7.13.3">
+    <property key="blurb" value="Z-Wave SwitchOnOff RU Region 7.13.3"/>
+    <property key="category" value="Switch On/Off"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SwitchOnOff_7.13.3_260_ZGM130S_REGION_RU.hex"/>
+    <description>Z-Wave SwitchOnOff RU Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SwitchOnOff binary for RU Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- CN Region -->
+  <demo name="ZW_SwitchOnOff_7.13.3_REGION_CN" label="Z-Wave SwitchOnOff CN Region 7.13.3">
+    <property key="blurb" value="Z-Wave SwitchOnOff CN Region 7.13.3"/>
+    <property key="category" value="Switch On/Off"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SwitchOnOff_7.13.3_260_ZGM130S_REGION_CN.hex"/>
+    <description>Z-Wave SwitchOnOff CN Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SwitchOnOff binary for CN Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- JP Region -->
+  <demo name="ZW_SwitchOnOff_7.13.3_REGION_JP" label="Z-Wave SwitchOnOff JP Region 7.13.3">
+    <property key="blurb" value="Z-Wave SwitchOnOff JP Region 7.13.3"/>
+    <property key="category" value="Switch On/Off"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SwitchOnOff_7.13.3_260_ZGM130S_REGION_JP.hex"/>
+    <description>Z-Wave SwitchOnOff JP Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SwitchOnOff binary for JP Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- KR Region -->
+  <demo name="ZW_SwitchOnOff_7.13.3_REGION_KR" label="Z-Wave SwitchOnOff KR Region 7.13.3">
+    <property key="blurb" value="Z-Wave SwitchOnOff KR Region 7.13.3"/>
+    <property key="category" value="Switch On/Off"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SwitchOnOff_7.13.3_260_ZGM130S_REGION_KR.hex"/>
+    <description>Z-Wave SwitchOnOff KR Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SwitchOnOff binary for KR Region&lt;/pre&gt;
+    </description>
+  </demo>
+
+  <!-- SensorPIR application -->
+  <!-- EU Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_EU" label="Z-Wave SensorPIR EU Region 7.13.3">
+    <property key="blurb" value="Z-Wave SensorPIR EU Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_ZGM130S_REGION_EU.hex"/>
+    <description>Z-Wave SensorPIR EU Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SensorPIR binary for EU Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- US Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_US" label="Z-Wave SensorPIR US Region 7.13.3">
+    <property key="blurb" value="Z-Wave SensorPIR US Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_ZGM130S_REGION_US.hex"/>
+    <description>Z-Wave SensorPIR US Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SensorPIR binary for US Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- ANZ Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_ANZ" label="Z-Wave SensorPIR ANZ Region 7.13.3">
+    <property key="blurb" value="Z-Wave SensorPIR ANZ Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_ZGM130S_REGION_ANZ.hex"/>
+    <description>Z-Wave SensorPIR ANZ Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SensorPIR binary for ANZ Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- HK Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_HK" label="Z-Wave SensorPIR HK Region 7.13.3">
+    <property key="blurb" value="Z-Wave SensorPIR HK Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_ZGM130S_REGION_HK.hex"/>
+    <description>Z-Wave SensorPIR HK Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SensorPIR binary for HK Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- IN Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_IN" label="Z-Wave SensorPIR IN Region 7.13.3">
+    <property key="blurb" value="Z-Wave SensorPIR IN Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_ZGM130S_REGION_IN.hex"/>
+    <description>Z-Wave SensorPIR IN Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SensorPIR binary for IN Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- IL Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_IL" label="Z-Wave SensorPIR IL Region 7.13.3">
+    <property key="blurb" value="Z-Wave SensorPIR IL Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_ZGM130S_REGION_IL.hex"/>
+    <description>Z-Wave SensorPIR IL Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SensorPIR binary for IL Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- RU Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_RU" label="Z-Wave SensorPIR RU Region 7.13.3">
+    <property key="blurb" value="Z-Wave SensorPIR RU Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_ZGM130S_REGION_RU.hex"/>
+    <description>Z-Wave SensorPIR RU Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SensorPIR binary for RU Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- CN Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_CN" label="Z-Wave SensorPIR CN Region 7.13.3">
+    <property key="blurb" value="Z-Wave SensorPIR CN Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_ZGM130S_REGION_CN.hex"/>
+    <description>Z-Wave SensorPIR CN Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SensorPIR binary for CN Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- JP Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_JP" label="Z-Wave SensorPIR JP Region 7.13.3">
+    <property key="blurb" value="Z-Wave SensorPIR JP Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_ZGM130S_REGION_JP.hex"/>
+    <description>Z-Wave SensorPIR JP Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SensorPIR binary for JP Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- KR Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_KR" label="Z-Wave SensorPIR KR Region 7.13.3">
+    <property key="blurb" value="Z-Wave SensorPIR KR Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_ZGM130S_REGION_KR.hex"/>
+    <description>Z-Wave SensorPIR KR Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave SensorPIR binary for KR Region&lt;/pre&gt;
+    </description>
+  </demo>
+
+  <!-- DoorLockKeyPad application -->
+  <!-- EU Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_EU" label="Z-Wave DoorLockKeyPad EU Region 7.13.3">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad EU Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_ZGM130S_REGION_EU.hex"/>
+    <description>Z-Wave DoorLockKeyPad EU Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave DoorLockKeyPad binary for EU Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- US Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_US" label="Z-Wave DoorLockKeyPad US Region 7.13.3">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad US Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_ZGM130S_REGION_US.hex"/>
+    <description>Z-Wave DoorLockKeyPad US Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave DoorLockKeyPad binary for US Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- ANZ Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_ANZ" label="Z-Wave DoorLockKeyPad ANZ Region 7.13.3">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad ANZ Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_ZGM130S_REGION_ANZ.hex"/>
+    <description>Z-Wave DoorLockKeyPad ANZ Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave DoorLockKeyPad binary for ANZ Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- HK Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_HK" label="Z-Wave DoorLockKeyPad HK Region 7.13.3">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad HK Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_ZGM130S_REGION_HK.hex"/>
+    <description>Z-Wave DoorLockKeyPad HK Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave DoorLockKeyPad binary for HK Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- IN Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_IN" label="Z-Wave DoorLockKeyPad IN Region 7.13.3">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad IN Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_ZGM130S_REGION_IN.hex"/>
+    <description>Z-Wave DoorLockKeyPad IN Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave DoorLockKeyPad binary for IN Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- IL Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_IL" label="Z-Wave DoorLockKeyPad IL Region 7.13.3">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad IL Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_ZGM130S_REGION_IL.hex"/>
+    <description>Z-Wave DoorLockKeyPad IL Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave DoorLockKeyPad binary for IL Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- RU Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_RU" label="Z-Wave DoorLockKeyPad RU Region 7.13.3">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad RU Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_ZGM130S_REGION_RU.hex"/>
+    <description>Z-Wave DoorLockKeyPad RU Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave DoorLockKeyPad binary for RU Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- CN Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_CN" label="Z-Wave DoorLockKeyPad CN Region 7.13.3">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad CN Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_ZGM130S_REGION_CN.hex"/>
+    <description>Z-Wave DoorLockKeyPad CN Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave DoorLockKeyPad binary for CN Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- JP Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_JP" label="Z-Wave DoorLockKeyPad JP Region 7.13.3">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad JP Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_ZGM130S_REGION_JP.hex"/>
+    <description>Z-Wave DoorLockKeyPad JP Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave DoorLockKeyPad binary for JP Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- KR Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_KR" label="Z-Wave DoorLockKeyPad KR Region 7.13.3">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad KR Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_ZGM130S_REGION_KR.hex"/>
+    <description>Z-Wave DoorLockKeyPad KR Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave DoorLockKeyPad binary for KR Region&lt;/pre&gt;
+    </description>
+  </demo>
+
+  <!-- PowerStrip application -->
+  <!-- EU Region -->
+  <demo name="ZW_PowerStrip_7.13.3_REGION_EU" label="Z-Wave PowerStrip EU Region 7.13.3">
+    <property key="blurb" value="Z-Wave PowerStrip EU Region 7.13.3"/>
+    <property key="category" value="Power Strip"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_PowerStrip_7.13.3_260_ZGM130S_REGION_EU.hex"/>
+    <description>Z-Wave PowerStrip EU Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave PowerStrip binary for EU Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- US Region -->
+  <demo name="ZW_PowerStrip_7.13.3_REGION_US" label="Z-Wave PowerStrip US Region 7.13.3">
+    <property key="blurb" value="Z-Wave PowerStrip US Region 7.13.3"/>
+    <property key="category" value="Power Strip"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_PowerStrip_7.13.3_260_ZGM130S_REGION_US.hex"/>
+    <description>Z-Wave PowerStrip US Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave PowerStrip binary for US Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- ANZ Region -->
+  <demo name="ZW_PowerStrip_7.13.3_REGION_ANZ" label="Z-Wave PowerStrip ANZ Region 7.13.3">
+    <property key="blurb" value="Z-Wave PowerStrip ANZ Region 7.13.3"/>
+    <property key="category" value="Power Strip"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_PowerStrip_7.13.3_260_ZGM130S_REGION_ANZ.hex"/>
+    <description>Z-Wave PowerStrip ANZ Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave PowerStrip binary for ANZ Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- HK Region -->
+  <demo name="ZW_PowerStrip_7.13.3_REGION_HK" label="Z-Wave PowerStrip HK Region 7.13.3">
+    <property key="blurb" value="Z-Wave PowerStrip HK Region 7.13.3"/>
+    <property key="category" value="Power Strip"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_PowerStrip_7.13.3_260_ZGM130S_REGION_HK.hex"/>
+    <description>Z-Wave PowerStrip HK Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave PowerStrip binary for HK Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- IN Region -->
+  <demo name="ZW_PowerStrip_7.13.3_REGION_IN" label="Z-Wave PowerStrip IN Region 7.13.3">
+    <property key="blurb" value="Z-Wave PowerStrip IN Region 7.13.3"/>
+    <property key="category" value="Power Strip"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_PowerStrip_7.13.3_260_ZGM130S_REGION_IN.hex"/>
+    <description>Z-Wave PowerStrip IN Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave PowerStrip binary for IN Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- IL Region -->
+  <demo name="ZW_PowerStrip_7.13.3_REGION_IL" label="Z-Wave PowerStrip IL Region 7.13.3">
+    <property key="blurb" value="Z-Wave PowerStrip IL Region 7.13.3"/>
+    <property key="category" value="Power Strip"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_PowerStrip_7.13.3_260_ZGM130S_REGION_IL.hex"/>
+    <description>Z-Wave PowerStrip IL Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave PowerStrip binary for IL Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- RU Region -->
+  <demo name="ZW_PowerStrip_7.13.3_REGION_RU" label="Z-Wave PowerStrip RU Region 7.13.3">
+    <property key="blurb" value="Z-Wave PowerStrip RU Region 7.13.3"/>
+    <property key="category" value="Power Strip"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_PowerStrip_7.13.3_260_ZGM130S_REGION_RU.hex"/>
+    <description>Z-Wave PowerStrip RU Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave PowerStrip binary for RU Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- CN Region -->
+  <demo name="ZW_PowerStrip_7.13.3_REGION_CN" label="Z-Wave PowerStrip CN Region 7.13.3">
+    <property key="blurb" value="Z-Wave PowerStrip CN Region 7.13.3"/>
+    <property key="category" value="Power Strip"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_PowerStrip_7.13.3_260_ZGM130S_REGION_CN.hex"/>
+    <description>Z-Wave PowerStrip CN Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave PowerStrip binary for CN Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- JP Region -->
+  <demo name="ZW_PowerStrip_7.13.3_REGION_JP" label="Z-Wave PowerStrip JP Region 7.13.3">
+    <property key="blurb" value="Z-Wave PowerStrip JP Region 7.13.3"/>
+    <property key="category" value="Power Strip"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_PowerStrip_7.13.3_260_ZGM130S_REGION_JP.hex"/>
+    <description>Z-Wave PowerStrip JP Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave PowerStrip binary for JP Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- KR Region -->
+  <demo name="ZW_PowerStrip_7.13.3_REGION_KR" label="Z-Wave PowerStrip KR Region 7.13.3">
+    <property key="blurb" value="Z-Wave PowerStrip KR Region 7.13.3"/>
+    <property key="category" value="Power Strip"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_PowerStrip_7.13.3_260_ZGM130S_REGION_KR.hex"/>
+    <description>Z-Wave PowerStrip KR Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave PowerStrip binary for KR Region&lt;/pre&gt;
+    </description>
+  </demo>
+
+  <!-- WallController application -->
+  <!-- EU Region -->
+  <demo name="ZW_WallController_7.13.3_REGION_EU" label="Z-Wave WallController EU Region 7.13.3">
+    <property key="blurb" value="Z-Wave WallController EU Region 7.13.3"/>
+    <property key="category" value="Wall Controller"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_WallController_7.13.3_260_ZGM130S_REGION_EU.hex"/>
+    <description>Z-Wave WallController EU Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave WallController binary for EU Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- US Region -->
+  <demo name="ZW_WallController_7.13.3_REGION_US" label="Z-Wave WallController US Region 7.13.3">
+    <property key="blurb" value="Z-Wave WallController US Region 7.13.3"/>
+    <property key="category" value="Wall Controller"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_WallController_7.13.3_260_ZGM130S_REGION_US.hex"/>
+    <description>Z-Wave WallController US Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave WallController binary for US Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- ANZ Region -->
+  <demo name="ZW_WallController_7.13.3_REGION_ANZ" label="Z-Wave WallController ANZ Region 7.13.3">
+    <property key="blurb" value="Z-Wave WallController ANZ Region 7.13.3"/>
+    <property key="category" value="Wall Controller"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_WallController_7.13.3_260_ZGM130S_REGION_ANZ.hex"/>
+    <description>Z-Wave WallController ANZ Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave WallController binary for ANZ Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- HK Region -->
+  <demo name="ZW_WallController_7.13.3_REGION_HK" label="Z-Wave WallController HK Region 7.13.3">
+    <property key="blurb" value="Z-Wave WallController HK Region 7.13.3"/>
+    <property key="category" value="Wall Controller"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_WallController_7.13.3_260_ZGM130S_REGION_HK.hex"/>
+    <description>Z-Wave WallController HK Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave WallController binary for HK Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- IN Region -->
+  <demo name="ZW_WallController_7.13.3_REGION_IN" label="Z-Wave WallController IN Region 7.13.3">
+    <property key="blurb" value="Z-Wave WallController IN Region 7.13.3"/>
+    <property key="category" value="Wall Controller"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_WallController_7.13.3_260_ZGM130S_REGION_IN.hex"/>
+    <description>Z-Wave WallController IN Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave WallController binary for IN Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- IL Region -->
+  <demo name="ZW_WallController_7.13.3_REGION_IL" label="Z-Wave WallController IL Region 7.13.3">
+    <property key="blurb" value="Z-Wave WallController IL Region 7.13.3"/>
+    <property key="category" value="Wall Controller"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_WallController_7.13.3_260_ZGM130S_REGION_IL.hex"/>
+    <description>Z-Wave WallController IL Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave WallController binary for IL Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- RU Region -->
+  <demo name="ZW_WallController_7.13.3_REGION_RU" label="Z-Wave WallController RU Region 7.13.3">
+    <property key="blurb" value="Z-Wave WallController RU Region 7.13.3"/>
+    <property key="category" value="Wall Controller"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_WallController_7.13.3_260_ZGM130S_REGION_RU.hex"/>
+    <description>Z-Wave WallController RU Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave WallController binary for RU Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- CN Region -->
+  <demo name="ZW_WallController_7.13.3_REGION_CN" label="Z-Wave WallController CN Region 7.13.3">
+    <property key="blurb" value="Z-Wave WallController CN Region 7.13.3"/>
+    <property key="category" value="Wall Controller"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_WallController_7.13.3_260_ZGM130S_REGION_CN.hex"/>
+    <description>Z-Wave WallController CN Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave WallController binary for CN Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- JP Region -->
+  <demo name="ZW_WallController_7.13.3_REGION_JP" label="Z-Wave WallController JP Region 7.13.3">
+    <property key="blurb" value="Z-Wave WallController JP Region 7.13.3"/>
+    <property key="category" value="Wall Controller"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_WallController_7.13.3_260_ZGM130S_REGION_JP.hex"/>
+    <description>Z-Wave WallController JP Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave WallController binary for JP Region&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- KR Region -->
+  <demo name="ZW_WallController_7.13.3_REGION_KR" label="Z-Wave WallController KR Region 7.13.3">
+    <property key="blurb" value="Z-Wave WallController KR Region 7.13.3"/>
+    <property key="category" value="Wall Controller"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_WallController_7.13.3_260_ZGM130S_REGION_KR.hex"/>
+    <description>Z-Wave WallController KR Region 7.13.3
+&lt;pre&gt;Prebuild Z-Wave WallController binary for KR Region&lt;/pre&gt;
+    </description>
+  </demo>
+
+   <!-- Bridge Controller SerialAPI -->
+   <!-- efr32zg14 -->
+  <!-- EU -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_EFR32ZG14_REGION_EU" label="Controller SerialAPI EU gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI EU gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value="mcu.arm.efr32.zg14.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_EFR32ZG14_REGION_EU.hex"/>
+    <description>Z-Wave Controller SerialAPI EU gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- US -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_EFR32ZG14_REGION_US" label="Controller SerialAPI US gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI US gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value="mcu.arm.efr32.zg14.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_EFR32ZG14_REGION_US.hex"/>
+    <description>Z-Wave Controller SerialAPI US gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- ANZ -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_EFR32ZG14_REGION_ANZ" label="Controller SerialAPI ANZ gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI ANZ gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value="mcu.arm.efr32.zg14.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_EFR32ZG14_REGION_ANZ.hex"/>
+    <description>Z-Wave Controller SerialAPI ANZ gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- HK -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_EFR32ZG14_REGION_HK" label="Controller SerialAPI HK gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI HK gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value="mcu.arm.efr32.zg14.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_EFR32ZG14_REGION_HK.hex"/>
+    <description>Z-Wave Controller SerialAPI HK gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- IN -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_EFR32ZG14_REGION_IN" label="Controller SerialAPI IN gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI IN gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value="mcu.arm.efr32.zg14.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_EFR32ZG14_REGION_IN.hex"/>
+    <description>Z-Wave Controller SerialAPI IN gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- IL -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_EFR32ZG14_REGION_IL" label="Controller SerialAPI IL gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI IL gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value="mcu.arm.efr32.zg14.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_EFR32ZG14_REGION_IL.hex"/>
+    <description>Z-Wave Controller SerialAPI IL gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- RU -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_EFR32ZG14_REGION_RU" label="Controller SerialAPI RU gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI RU gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value="mcu.arm.efr32.zg14.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_EFR32ZG14_REGION_RU.hex"/>
+    <description>Z-Wave Controller SerialAPI RU gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- CN -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_EFR32ZG14_REGION_CN" label="Controller SerialAPI CN gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI CN gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value="mcu.arm.efr32.zg14.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_EFR32ZG14_REGION_CN.hex"/>
+    <description>Z-Wave Controller SerialAPI CN gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- JP -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_EFR32ZG14_REGION_JP" label="Controller SerialAPI JP gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI JP gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value="mcu.arm.efr32.zg14.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_EFR32ZG14_REGION_JP.hex"/>
+    <description>Z-Wave Controller SerialAPI JP gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- KR -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_EFR32ZG14_REGION_KR" label="Controller SerialAPI KR gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI KR gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value="mcu.arm.efr32.zg14.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_EFR32ZG14_REGION_KR.hex"/>
+    <description>Z-Wave Controller SerialAPI KR gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- ZGM130S -->
+  <!-- EU -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_REGION_EU" label="Controller SerialAPI EU gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI EU gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_ZGM130S_REGION_EU.hex"/>
+    <description>Z-Wave Controller SerialAPI EU gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- US -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_REGION_US" label="Controller SerialAPI US gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI US gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_ZGM130S_REGION_US.hex"/>
+    <description>Z-Wave Controller SerialAPI US gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- ANZ -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_REGION_ANZ" label="Controller SerialAPI ANZ gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI ANZ gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_ZGM130S_REGION_ANZ.hex"/>
+    <description>Z-Wave Controller SerialAPI ANZ gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- HK -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_REGION_HK" label="Controller SerialAPI HK gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI HK gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_ZGM130S_REGION_HK.hex"/>
+    <description>Z-Wave Controller SerialAPI HK gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- IN -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_REGION_IN" label="Controller SerialAPI IN gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI IN gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_ZGM130S_REGION_IN.hex"/>
+    <description>Z-Wave Controller SerialAPI IN gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- IL -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_REGION_IL" label="Controller SerialAPI IL gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI IL gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_ZGM130S_REGION_IL.hex"/>
+    <description>Z-Wave Controller SerialAPI IL gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- RU -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_REGION_RU" label="Controller SerialAPI RU gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI RU gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_ZGM130S_REGION_RU.hex"/>
+    <description>Z-Wave Controller SerialAPI RU gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- CN -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_REGION_CN" label="Controller SerialAPI CN gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI CN gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_ZGM130S_REGION_CN.hex"/>
+    <description>Z-Wave Controller SerialAPI CN gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- JP -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_REGION_JP" label="Controller SerialAPI JP gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI JP gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_ZGM130S_REGION_JP.hex"/>
+    <description>Z-Wave Controller SerialAPI JP gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- KR -->
+  <demo name="ZW_SerialAPI_Controller_7.13.3_REGION_KR" label="Controller SerialAPI KR gecko 7.13.3">
+    <property key="blurb" value="Controller SerialAPI KR gecko 7.13.3"/>
+    <property key="category" value="SerialAPI"/>
+    <property key="priority" value="1"/>
+    <property key="partCompatibility" value=".*zgm130s037hgn.*"/>
+    <property key="imageFile" value="ZW_SerialAPI_Controller_7.13.3_260_ZGM130S_REGION_KR.hex"/>
+    <description>Z-Wave Controller SerialAPI KR gecko 7.13.3.
+&lt;pre&gt;
+ATTENTION: If reprogramming the chip with a SerialAPI build
+for another frequency than the one currently used on chip,
+remember to communicate the new frequency to SerialAPI as well
+after reprogramming, otherwise the previous used frequency will
+be used. This can for instance be done from the PC Controller
+software under Transmit Settings.&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- EFR32ZG13P32 -->
+
+  <!-- SensorPIR EFR32ZG13P32 application -->
+  <!-- EU Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_EU" label="Z-Wave SensorPIR EU Region 7.13.3 EFR32ZG13P32">
+    <property key="blurb" value="Z-Wave SensorPIR EU Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm32.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_EFR32ZG13P32_REGION_EU.hex"/>
+    <description>Z-Wave SensorPIR EU Region 7.13.3.
+&lt;pre&gt;
+Prebuild Z-Wave SensorPIR binary for EU Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- US Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_US" label="Z-Wave SensorPIR US Region 7.13.3 EFR32ZG13P32">
+    <property key="blurb" value="Z-Wave SensorPIR US Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm32.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_EFR32ZG13P32_REGION_US.hex"/>
+    <description>Z-Wave SensorPIR US Region 7.13.3.
+&lt;pre&gt;
+Prebuild Z-Wave SensorPIR binary for US Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- ANZ Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_ANZ" label="Z-Wave SensorPIR ANZ Region 7.13.3 EFR32ZG13P32">
+    <property key="blurb" value="Z-Wave SensorPIR ANZ Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm32.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_EFR32ZG13P32_REGION_ANZ.hex"/>
+    <description>Z-Wave SensorPIR ANZ Region 7.13.3.
+&lt;pre&gt;
+Prebuild Z-Wave SensorPIR binary for ANZ Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- HK Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_HK" label="Z-Wave SensorPIR HK Region 7.13.3 EFR32ZG13P32">
+    <property key="blurb" value="Z-Wave SensorPIR HK Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm32.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_EFR32ZG13P32_REGION_HK.hex"/>
+    <description>Z-Wave SensorPIR HK Region 7.13.3.
+&lt;pre&gt;
+Prebuild Z-Wave SensorPIR binary for HK Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- IN Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_IN" label="Z-Wave SensorPIR IN Region 7.13.3 EFR32ZG13P32">
+    <property key="blurb" value="Z-Wave SensorPIR IN Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm32.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_EFR32ZG13P32_REGION_IN.hex"/>
+    <description>Z-Wave SensorPIR IN Region 7.13.3.
+&lt;pre&gt;
+Prebuild Z-Wave SensorPIR binary for IN Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- IL Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_IL" label="Z-Wave SensorPIR IL Region 7.13.3 EFR32ZG13P32">
+    <property key="blurb" value="Z-Wave SensorPIR IL Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm32.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_EFR32ZG13P32_REGION_IL.hex"/>
+    <description>Z-Wave SensorPIR IL Region 7.13.3.
+&lt;pre&gt;
+Prebuild Z-Wave SensorPIR binary for IL Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- RU Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_RU" label="Z-Wave SensorPIR RU Region 7.13.3 EFR32ZG13P32">
+    <property key="blurb" value="Z-Wave SensorPIR RU Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm32.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_EFR32ZG13P32_REGION_RU.hex"/>
+    <description>Z-Wave SensorPIR RU Region 7.13.3.
+&lt;pre&gt;
+Prebuild Z-Wave SensorPIR binary for RU Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- CN Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_CN" label="Z-Wave SensorPIR CN Region 7.13.3 EFR32ZG13P32">
+    <property key="blurb" value="Z-Wave SensorPIR CN Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm32.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_EFR32ZG13P32_REGION_CN.hex"/>
+    <description>Z-Wave SensorPIR CN Region 7.13.3.
+&lt;pre&gt;
+Prebuild Z-Wave SensorPIR binary for CN Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- JP Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_JP" label="Z-Wave SensorPIR JP Region 7.13.3 EFR32ZG13P32">
+    <property key="blurb" value="Z-Wave SensorPIR JP Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm32.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_EFR32ZG13P32_REGION_JP.hex"/>
+    <description>Z-Wave SensorPIR JP Region 7.13.3.
+&lt;pre&gt;
+Prebuild Z-Wave SensorPIR binary for JP Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- KR Region -->
+  <demo name="ZW_SensorPIR_7.13.3_REGION_KR" label="Z-Wave SensorPIR KR Region 7.13.3 EFR32ZG13P32">
+    <property key="blurb" value="Z-Wave SensorPIR KR Region 7.13.3"/>
+    <property key="category" value="SensorPIR"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm32.*"/>
+    <property key="imageFile" value="ZW_SensorPir_7.13.3_260_EFR32ZG13P32_REGION_KR.hex"/>
+    <description>Z-Wave SensorPIR KR Region 7.13.3.
+&lt;pre&gt;
+Prebuild Z-Wave SensorPIR binary for KR Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- EFR32ZG13P48 -->
+
+  <!-- DoorLockKeyPad EFR32ZG13P48 application -->
+  <!-- EU Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_EU" label="Z-Wave DoorLockKeyPad EU Region 7.13.3 EFR32ZG13P48">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad EU Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm48.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_EFR32ZG13P48_REGION_EU.hex"/>
+    <description>Z-Wave DoorLockKeyPad EU Region 7.13.3
+&lt;pre&gt;
+Prebuild Z-Wave DoorLockKeyPad binary for EU Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- US Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_US" label="Z-Wave DoorLockKeyPad US Region 7.13.3 EFR32ZG13P48">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad US Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm48.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_EFR32ZG13P48_REGION_US.hex"/>
+    <description>Z-Wave DoorLockKeyPad US Region 7.13.3
+&lt;pre&gt;
+Prebuild Z-Wave DoorLockKeyPad binary for US Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- ANZ Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_ANZ" label="Z-Wave DoorLockKeyPad ANZ Region 7.13.3 EFR32ZG13P48">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad ANZ Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm48.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_EFR32ZG13P48_REGION_ANZ.hex"/>
+    <description>Z-Wave DoorLockKeyPad ANZ Region 7.13.3
+&lt;pre&gt;
+Prebuild Z-Wave DoorLockKeyPad binary for ANZ Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- HK Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_HK" label="Z-Wave DoorLockKeyPad HK Region 7.13.3 EFR32ZG13P48">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad HK Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm48.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_EFR32ZG13P48_REGION_HK.hex"/>
+    <description>Z-Wave DoorLockKeyPad HK Region 7.13.3
+&lt;pre&gt;
+Prebuild Z-Wave DoorLockKeyPad binary for HK Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- IN Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_IN" label="Z-Wave DoorLockKeyPad IN Region 7.13.3 EFR32ZG13P48">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad IN Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm48.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_EFR32ZG13P48_REGION_IN.hex"/>
+    <description>Z-Wave DoorLockKeyPad IN Region 7.13.3
+&lt;pre&gt;
+Prebuild Z-Wave DoorLockKeyPad binary for IN Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- IL Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_IL" label="Z-Wave DoorLockKeyPad IL Region 7.13.3 EFR32ZG13P48">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad IL Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm48.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_EFR32ZG13P48_REGION_IL.hex"/>
+    <description>Z-Wave DoorLockKeyPad IL Region 7.13.3
+&lt;pre&gt;
+Prebuild Z-Wave DoorLockKeyPad binary for IL Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- RU Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_RU" label="Z-Wave DoorLockKeyPad RU Region 7.13.3 EFR32ZG13P48">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad RU Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm48.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_EFR32ZG13P48_REGION_RU.hex"/>
+    <description>Z-Wave DoorLockKeyPad RU Region 7.13.3
+&lt;pre&gt;
+Prebuild Z-Wave DoorLockKeyPad binary for RU Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- CN Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_CN" label="Z-Wave DoorLockKeyPad CN Region 7.13.3 EFR32ZG13P48">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad CN Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm48.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_EFR32ZG13P48_REGION_CN.hex"/>
+    <description>Z-Wave DoorLockKeyPad CN Region 7.13.3
+&lt;pre&gt;
+Prebuild Z-Wave DoorLockKeyPad binary for CN Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- JP Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_JP" label="Z-Wave DoorLockKeyPad JP Region 7.13.3 EFR32ZG13P48">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad JP Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm48.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_EFR32ZG13P48_REGION_JP.hex"/>
+    <description>Z-Wave DoorLockKeyPad JP Region 7.13.3
+&lt;pre&gt;
+Prebuild Z-Wave DoorLockKeyPad binary for JP Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+  <!-- KR Region -->
+  <demo name="ZW_DoorLockKeyPad_7.13.3_REGION_KR" label="Z-Wave DoorLockKeyPad KR Region 7.13.3 EFR32ZG13P48">
+    <property key="blurb" value="Z-Wave DoorLockKeyPad KR Region 7.13.3"/>
+    <property key="category" value="Door Lock keypad"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*efr32zg13p531f512gm48.*"/>
+    <property key="imageFile" value="ZW_DoorLockKeyPad_7.13.3_260_EFR32ZG13P48_REGION_KR.hex"/>
+    <description>Z-Wave DoorLockKeyPad KR Region 7.13.3
+&lt;pre&gt;
+Prebuild Z-Wave DoorLockKeyPad binary for KR Region
+&lt;/pre&gt;
+    </description>
+  </demo>
+</demos>
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project id="com.silabs.sdk.exx32.zwave.ZAF.ApplicationUtilities.EventHandling" label="Z-Wave ZAF ApplicationUtilities EventHandling" contentRoot="$(sdkInstallationPath:default())/protocol/z-wave/ZAF/ApplicationUtilities/EventHandling">
+  <property key="category" value="efm32|Z-wave"/>
+  <folder name="ZAF_ApplicationUtilities_EventHandling" uri="." includeAllFiles="true" />
+  <includePath uri="." />
+</project>

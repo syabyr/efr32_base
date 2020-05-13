@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<device:XMLDevice xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:device="http://www.silabs.com/ss/hwconfig/document/device.ecore">
+  <mode name="DefaultMode">
+    <property object="BUTTON" propertyId="ABPeripheral.included" value="true" />
+    <property object="CMU" propertyId="CMU.BSP_CLK_HFXO_CTUNE_TOKEN.BOOL" value="1"/>
+    <property object="LED" propertyId="ABPeripheral.included" value="true" />
+    <property object="SERIAL" propertyId="ABPeripheral.included" value="true" />
+    <property object="VCOM" propertyId="ABPeripheral.included" value="true" />
+    <property object="GPIO" propertyId="ABPeripheral.included" value="true" />
+    <property object="SPIDISPLAY" propertyId="ABPeripheral.included" value="true"/>
+    <property object="SPIDISPLAY" propertyId="SPIDISPLAY.HAL_SPIDISPLAY_EXTCOMIN_CALLBACK.STRING" value="rtcIntCallbackRegister"/>
+    <property object="SPIDISPLAY" propertyId="SPIDISPLAY.HAL_SPIDISPLAY_EXTCOMIN_USE_CALLBACK.BOOL" value="1"/>
+    <property object="SPIDISPLAY" propertyId="SPIDISPLAY.HAL_SPIDISPLAY_EXTCOMIN_USE_PRS.BOOL" value="0"/>
+    <property object="USART0" propertyId="USART.HAL_USART_FLOW_CONTROL.ENUM" value="HAL_USART_FLOW_CONTROL_NONE"/>
+
+  </mode>
+</device:XMLDevice>

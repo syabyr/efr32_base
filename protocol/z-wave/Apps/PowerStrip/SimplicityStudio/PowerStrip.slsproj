@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="PowerStrip" partCompatibility=".*zgm130s037hgn.*" toolchainCompatibility=".*gn[u].*7.2.*" contentRoot="../">
+  <module id="com.silabs.sdk.exx32.zwave.appsign"/>
+
+  <!-- Application Utilities modules-->
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.ApplicationUtilities.EventHandling">
+    <include pattern="ZAF_ApplicationUtilities_EventHandling/zaf_event_helper.c" />
+    <include pattern="ZAF_ApplicationUtilities_EventHandling/zaf_job_helper.c" />
+  </module>
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.ApplicationUtilities.commonIF">
+     <exclude pattern=".*" />
+  </module>
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.ApplicationUtilities.PowerManagement">
+     <exclude pattern=".*" />
+  </module>
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.ApplicationUtilities.TrueStatusEngine">
+    <include pattern="ZAF_ApplicationUtilities_TrueStatusEngine/ZAF_TSE.c" />
+    <include pattern="ZAF_ApplicationUtilities_TrueStatusEngine/ZAF_TSE.h" />
+  </module>
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.ApplicationUtilities">
+    <include pattern="ZAF_ApplicationUtilities/ZAF_nvm3_app.c" />
+    <include pattern="ZAF_ApplicationUtilities/ZAF_uart_utils.c" />
+    <include pattern="ZAF_ApplicationUtilities/AppTimer.c" />
+    <include pattern="ZAF_ApplicationUtilities/endpoint_lookup.c" />
+    <include pattern="ZAF_ApplicationUtilities/ZAF_network_learn.c" />
+	<include pattern="ZAF_ApplicationUtilities/ZAF_CmdPublisher.c" />
+    <include pattern="ZAF_ApplicationUtilities/ZAF_app_version.c" />
+    <include pattern="ZAF_ApplicationUtilities/ZAF_app_version.h" />
+    <include pattern="ZAF_ApplicationUtilities/ZAF_command_class_utils.c" />
+    <include pattern="ZAF_ApplicationUtilities/ZAF_network_management.c" />
+    <include pattern="ZAF_ApplicationUtilities/ZAF_RetentionRegisterBank.c" />
+    <include pattern="ZAF_ApplicationUtilities/ZW_TransportEndpoint.c" />
+    <include pattern="ZAF_ApplicationUtilities/ZW_TransportMulticast.c" />
+    <include pattern="ZAF_ApplicationUtilities/ZW_TransportSecProtocol.c" />
+    <include pattern="ZAF_ApplicationUtilities/ZAF_tx_mutex.c" />
+    <!-- common source to all apps -->
+    <include pattern="ZAF_ApplicationUtilities/board.c" />
+    <include pattern="ZAF_ApplicationUtilities/board_BRD420x.c" />
+    <include pattern="ZAF_ApplicationUtilities/board_indicator.c" />
+    <include pattern="ZAF_ApplicationUtilities/application_properties.c" />
+  </module>
+
+  <!-- Command Class modules -->
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.Association">
+    <include pattern="ZAF_CommandClasses_Association/CC_Association.c" />
+    <include pattern="ZAF_CommandClasses_Association/CC_AssociationGroupInfo.c" />
+    <include pattern="ZAF_CommandClasses_Association/CC_MultiChanAssociation.c" />
+    <include pattern="ZAF_CommandClasses_Association/agi.c" />
+    <include pattern="ZAF_CommandClasses_Association/association_plus.c" />
+  </module>
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.Basic">
+    <include pattern="ZAF_CommandClasses_Basic/CC_Basic.c" />
+    <include pattern="ZAF_CommandClasses_Basic/CC_BasicController.c" />
+  </module>
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.BinarySwitch">
+    <include pattern="ZAF_CommandClasses_BinarySwitch/CC_BinarySwitch.c" />
+  </module>
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.Common">
+    <exclude pattern=".*" />
+  </module>
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.DeviceResetLocally">
+    <include pattern="ZAF_CommandClasses_DeviceResetLocally/CC_DeviceResetLocally.c" />
+  </module>
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.FirmwareUpdate">
+    <include pattern="ZAF_CommandClasses_FirmwareUpdate/CC_FirmwareUpdate.c" />
+    <include pattern="ZAF_CommandClasses_FirmwareUpdate/CC_FirmwareUpdate.h" />
+    <include pattern="ZAF_CommandClasses_FirmwareUpdate/ota_util.c" />
+    <include pattern="ZAF_CommandClasses_FirmwareUpdate/ota_util.h" />
+    <include pattern="ZAF_CommandClasses_FirmwareUpdate/btl_reset_cause_util.c" />
+    <include pattern="ZAF_CommandClasses_FirmwareUpdate/btl_reset_cause_util.h" />
+  </module>
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.Indicator">
+    <include pattern="ZAF_CommandClasses_Indicator/CC_Indicator.c" />
+    <include pattern="ZAF_CommandClasses_Indicator/CC_Indicator.h" />
+  </module>
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.MultiChan">
+    <include pattern="ZAF_CommandClasses_MultiChan/CC_MultiChan.c" />
+    <include pattern="ZAF_CommandClasses_MultiChan/multichannel.c" />
+  </module>
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.MultilevelSwitch">
+    <include pattern="ZAF_CommandClasses_MultilevelSwitch/CC_MultilevelSwitch.c" />
+    <include pattern="ZAF_CommandClasses_MultilevelSwitch/CC_MultilevelSwitchCtrl.c" />
+    <include pattern="ZAF_CommandClasses_MultilevelSwitch/multilevel_switch.c" />
+  </module>
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.ManufacturerSpecific">
+    <include pattern="ZAF_CommandClasses_ManufacturerSpecific/CC_ManufacturerSpecific.c" />
+  </module>
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.Notification">
+    <include pattern="ZAF_CommandClasses_Notification/CC_Notification.c" />
+    <include pattern="ZAF_CommandClasses_Notification/notification.c" />
+  </module>
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.PowerLevel">
+    <include pattern="ZAF_CommandClasses_PowerLevel/CC_PowerLevel.c" />
+  </module>
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.Security">
+    <include pattern="ZAF_CommandClasses_Security/CC_Security.c" />
+    <include pattern="ZAF_CommandClasses_Security/CC_Security.h" />
+  </module>
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.Supervision">
+    <include pattern="ZAF_CommandClasses_Supervision/CC_Supervision.c" />
+  </module>
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.Version">
+     <exclude pattern=".*" />
+  </module>
+  <module id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.ZWavePlusInfo">
+    <include pattern="ZAF_CommandClasses_ZWavePlusInfo/CC_ZWavePlusInfo.c" />
+  </module>
+
+  <!-- Project files / folders -->
+  <folder name="src">
+    <file name="PowerStrip.c" uri="PowerStrip.c" />
+    <file name="config_app.h" uri="config_app.h" />
+    <file name="config_rf.h" uri="config_rf.h" />
+    <file name="events.h" uri="events.h" />
+  </folder>
+  <folder name="emlib">
+    <file name="em_letimer.c" uri="studio:/sdk/platform/emlib/src/em_letimer.c" />
+    <file name="em_timer.c" uri="studio:/sdk/platform/emlib/src/em_timer.c" />
+  </folder>
+  <folder name="emdrv">
+	  <file name="gpiointerrupt.c" uri="studio:/sdk/platform/emdrv/gpiointerrupt/src/gpiointerrupt.c" />
+  </folder>
+  <folder name="Device">
+    <file name="system_zgm13.c" uri="studio:/sdk/platform/Device/SiliconLabs/ZGM13/Source/system_zgm13.c" partCompatibility=".*zgm130s037hgn.*" />
+    <file name="startup_zgm13.S" uri="studio:/sdk/platform/Device/SiliconLabs/ZGM13/Source/GCC/startup_zgm13.S" partCompatibility=".*zgm130s037hgn.*" />
+  </folder>
+
+  <!-- Macro definitions -->
+    <!-- Module -->
+  <macroDefinition name="ZGM130S037HGN" value="1" languageCompatibility="c cpp" partCompatibility=".*zgm130s037hgn.*" />
+  <macroDefinition name="EFR32ZG" value="1" languageCompatibility="c cpp" />
+    <!-- Slave/Controller -->
+  <macroDefinition name="ZW_SLAVE_ENHANCED_232" value="1" languageCompatibility="c cpp" />
+  <macroDefinition name="ZW_SLAVE" value="1" languageCompatibility="c cpp" />
+    <!-- Button board -->
+  <macroDefinition name="RADIO_BOARD_ZGM130S" value="1" languageCompatibility="c cpp" partCompatibility=".*zgm130s037hgn.*" />
+  <macroDefinition name="EXT_BOARD_8029A" value="1" languageCompatibility="c cpp" />
+    <!-- Application specific -->
+  <macroDefinition name="DISABLE_USART1" value="1" languageCompatibility="c cpp" />
+    <!-- Build variant specific -->
+  <module builtin="true" id="pdmMacroDefinitions" pdm="true"/>
+  <PDMDefinition name="pdmMacroDefinitions">
+    <!-- Release build:  -->
+    <configuration name="release" stockConfigCompatibility="com.silabs.ss.framework.project.toolchain.core.release">
+      <macroDefinition name="NO_DEBUGPRINT" value="1" languageCompatibility="c cpp" />
+    </configuration>
+    <!-- Debug build: -->
+    <configuration name="debug" stockConfigCompatibility="com.silabs.ss.framework.project.toolchain.core.debug">
+      <!-- None -->
+    </configuration>
+  </PDMDefinition>
+
+  <!-- Include paths -->
+  <includePath uri="$(projectLocation)/src" />
+  <includePath uri="studio:/sdk/protocol/z-wave/ZWave/API" />
+  <includePath uri="studio:/sdk/protocol/z-wave" />
+  <includePath uri="studio:/sdk/platform/bootloader" />
+  <includePath uri="studio:/sdk/platform/bootloader/api" />
+  <includePath uri="studio:/sdk/platform/bootloader/core" />
+  <includePath uri="studio:/sdk/platform/CMSIS/Include" />
+  <includePath uri="studio:/sdk/platform/Device/SiliconLabs/ZGM13/Include" partCompatibility=".*zgm130s037hgn.*" />
+  <includePath uri="studio:/sdk/platform/emlib/inc" />
+  <includePath uri="studio:/sdk/platform/emdrv/gpiointerrupt/inc" />
+  <includePath uri="studio:/sdk/platform/emdrv/sleep/inc" />
+  <includePath uri="studio:/sdk/platform/halconfig/inc/hal-config" />
+  <includePath uri="studio:/sdk/platform/emdrv/nvm3/inc" />
+  <includePath uri="studio:/sdk/platform/emdrv/common/inc" />
+  <includePath uri="studio:/sdk/hardware/kit/common/bsp" />
+  <includePath uri="studio:/sdk/hardware/kit/common/halconfig" />
+  <includePath uri="studio:/sdk/protocol/z-wave/Components/QueueNotifying" />
+  <includePath uri="studio:/sdk/protocol/z-wave/Components/SwTimer" />
+  <includePath uri="studio:/sdk/protocol/z-wave/Components/CRC" />
+  <includePath uri="studio:/sdk/protocol/z-wave/Components/EventDistributor" />
+  <includePath uri="studio:/sdk/protocol/z-wave/Components/DebugPrint" />
+  <includePath uri="studio:/sdk/protocol/z-wave/Components/Assert" />
+  <includePath uri="studio:/sdk/protocol/z-wave/Components/Utils" />
+  <includePath uri="studio:/sdk/protocol/z-wave/Components/SyncEvent" />
+  <includePath uri="studio:/sdk/protocol/z-wave/Components/NodeMask" />
+  <includePath uri="studio:/sdk/protocol/z-wave/Components/RetentionRegisterBank" />
+  <includePath uri="studio:/sdk/protocol/z-wave/Processor/gecko" />
+  <includePath uri="studio:/sdk/protocol/z-wave/Processor/gecko/hal-config" />
+  <includePath uri="studio:/sdk/util/third_party/freertos/Source/include" />
+  <includePath uri="studio:/sdk/util/third_party/freertos/Source/portable/GCC/ARM_CM4F" />
+  <includePath uri="studio:/sdk/protocol/z-wave/ZWave/Freertos/include" />
+  <includePath uri="studio:/sdk/protocol/z-wave/ZWave/Freertos/include/gecko" />
+
+  <!-- Simplicity tool settings -->
+  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.nostdlibs" value="false" />
+  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.circulardependency" value="true" />
+  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.exe" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.usescript" value="true" />
+  <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.toolchain.exe" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.script" value="${StudioSdkPath}/protocol/z-wave/ZWave/linkerscripts/zgm13-zw700.ld" />
+    <!-- Build variant specific -->
+  <module builtin="true" id="pdmToolSettings" pdm="true"/>
+  <PDMDefinition name="pdmToolSettings">
+    <!-- Release build:  -->
+    <configuration name="release" stockConfigCompatibility="com.silabs.ss.framework.project.toolchain.core.release">
+      <!-- Optimization level: -O2 (more) -->
+      <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base" optionId="gnu.c.compiler.option.optimization.level" value="gnu.c.optimization.level.more"/>
+    </configuration>
+    <!-- Debug build: -->
+    <configuration name="debug" stockConfigCompatibility="com.silabs.ss.framework.project.toolchain.core.debug">
+      <!-- Optimization level: -O0 (none) -->
+      <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base" optionId="gnu.c.compiler.option.optimization.level" value="gnu.c.optimization.level.none"/>
+    </configuration>
+  </PDMDefinition>
+
+  <!-- Library files -->
+  <libraryFile uri="$(sdkInstallationPath)/protocol/z-wave/ZWave/lib/libZWaveSlave.a" />
+
+  <!-- Imported from FGSDK -->
+    <!-- RAIL -->
+  <libraryFile uri="$(sdkInstallationPath)/platform/radio/rail_lib/autogen/librail_release/librail_efr32xg13_gcc_release.a" />
+</project>

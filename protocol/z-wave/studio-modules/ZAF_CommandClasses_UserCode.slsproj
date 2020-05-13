@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.UserCode" label="Z-Wave ZAF CommandClasses UserCode" contentRoot="$(sdkInstallationPath:default())/protocol/z-wave/ZAF/CommandClasses/UserCode">
+  <property key="category" value="efm32|Z-wave"/>
+  <folder name="ZAF_CommandClasses_UserCode" uri="." includeAllFiles="true" />
+  <includePath uri="." />
+</project>

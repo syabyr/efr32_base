@@ -1,0 +1,127 @@
+#ISD afv6
+# ISD version: 4.18.1.qualifier
+
+# Application configuration
+appId: flex
+frameworkRoot: protocol\flex\connect
+architecture: pc
+deviceName: empty-host
+generationDirectory: PATH(ISC_RELATIVE):.
+
+# Devices
+device: Unix UART Host
+
+# Plugin configuration
+appPlugin: antenna-stub=false
+appPlugin: ash-v3=true
+appPlugin: bootloader-interface=false
+appPlugin: buffer-pool-memory-manager=false
+appPlugin: circular-queue=false
+appPlugin: coexistence=false
+appPlugin: coexistence-stub=true
+appPlugin: command-interpreter=true
+appPlugin: command-interpreter-rail=false
+appPlugin: csp-host=true
+appPlugin: csp-ncp=false
+appPlugin: debug-print=false
+appPlugin: diagnostic=false
+appPlugin: diagnostic-stub=false
+appPlugin: dmp-demo-ui=false
+appPlugin: dmp-demo-utils=false
+appPlugin: fem-control=false
+appPlugin: frequency-hopping=false
+appPlugin: hal=false
+appPlugin: hal-efr32=false
+appPlugin: heartbeat=false
+appPlugin: host-network-management-cli=false
+appPlugin: idle-sleep=false
+appPlugin: lcd-graphics=false
+appPlugin: mailbox-client=false
+appPlugin: mailbox-server=false
+appPlugin: main=true
+appPlugin: micrium-rtos=false
+appPlugin: ncp-main=false
+appPlugin: ncp-uart-link=false
+appPlugin: ota-bootloader-test-common=false
+appPlugin: ota-broadcast-bootloader-client=false
+appPlugin: ota-broadcast-bootloader-server=false
+appPlugin: ota-broadcast-bootloader-test=false
+appPlugin: ota-unicast-bootloader-client=false
+appPlugin: ota-unicast-bootloader-server=false
+appPlugin: ota-unicast-bootloader-test=false
+appPlugin: pa-conversions=false
+appPlugin: poll=true
+appPlugin: rail-app-config=false
+appPlugin: rail-library=false
+appPlugin: rail-library-mp=false
+appPlugin: railtest-base=false
+appPlugin: railtest-ram-modem-reconfiguration=false
+appPlugin: rangetest-base=false
+appPlugin: response-printf=false
+appPlugin: serial=true
+appPlugin: serial-bootloader-cli=true
+appPlugin: sim-eeprom1=false
+appPlugin: sim-eeprom2=false
+appPlugin: sim-eeprom2-1to2-upgrade=false
+appPlugin: sim-eeprom2-1to2-upgrade-stub=false
+appPlugin: spi-flash=false
+appPlugin: stack-aes-security=false
+appPlugin: stack-common=false
+appPlugin: stack-counters=false
+appPlugin: stack-form-and-join=true
+appPlugin: stack-mac-queue=false
+appPlugin: stack-parent-support=false
+appPlugin: stack-xxtea-security=false
+appPlugin: unix-library=true
+appPlugin: wmbus=false
+appPlugin: wstk-sensors=false
+
+# Setup configurations
+{setupId:additionalFiles
+}
+{setupId:boardHeader
+allowMissingHeader:false
+useHeaderInPlace:false
+}
+{setupId:bookkeeping
+}
+{setupId:bootloader
+}
+{setupId:callbackConfiguration
+emberAfMainInitCallback:true
+}
+{setupId:commandLineConfiguration
+on
+}
+{setupId:connectStackConfig
+Radio board: BRD4502
+}
+{setupId:debugConfiguration
+off
+area name off
+appSerial=1
+}
+{setupId:eventConfiguration
+}
+{setupId:hwConfig
+featureLevel=1
+active=true
+}
+{setupId:information
+\{key:description
+A minimal Connect project structure, used as a starting point for custom applications.
+By default, only the bare minimum plugins and emberAfMainInitCallback is enabled.
+For customization options regarding plugins, callbacks and events, see UG235.04.
+\}
+}
+{setupId:macros
+}
+{setupId:phyOptions
+}
+{setupId:template
+}
+{setupId:token
+}
+
+# UI/Setup customization for multi-phy
+hiddenLayoutElements: radio, radio_mp

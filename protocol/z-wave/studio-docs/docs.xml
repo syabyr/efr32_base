@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentItems>
+
+  <!-- Z-Wave Plus v2 specification documents -->
+  <contentItemData itemURI="https://www.silabs.com/documents/login/miscellaneous/SDS13548-List-of-defined-Z-Wave-Command-Classes.xlsx" label="SDS13548: List of defined Z-Wave Command Classes">
+    <property key="category" value="Z-Wave Specifications"/>
+    <property key="priority" value="1"/>
+    <description>List of defined Z-Wave Command Classes</description>
+  </contentItemData>
+
+  <contentItemData itemURI="https://www.silabs.com/documents/login/miscellaneous/SDS14224-Z-Wave-Plus-v2-Device-Type-Specification.pdf" label="SDS14224: Z-Wave Plus v2 Device Type Specification">
+    <property key="category" value="Z-Wave Specifications"/>
+    <property key="priority" value="2"/>
+    <description>Z-Wave Plus v2 Device Type Specification</description>
+  </contentItemData>
+
+  <contentItemData itemURI="https://www.silabs.com/documents/login/miscellaneous/SDS11846-Z-Wave-Plus-Role-Type-Specification.pdf" label="SDS11846: Z-Wave Plus Role Type Specification">
+    <property key="category" value="Z-Wave Specifications"/>
+    <property key="priority" value="3"/>
+    <description>Z-Wave Plus Role Type Specification</description>
+  </contentItemData>
+
+  <contentItemData itemURI="https://www.silabs.com/documents/login/miscellaneous/SDS13781-Z-Wave-Application-Command-Class-Specification.pdf" label="SDS13781: Z-Wave Application Command Class Specification">
+    <property key="category" value="Z-Wave Specifications"/>
+    <property key="priority" value="4"/>
+    <description>Z-Wave Application Command Class Specification</description>
+  </contentItemData>
+
+  <contentItemData itemURI="https://www.silabs.com/documents/login/miscellaneous/SDS13782-Z-Wave-Management-Command-Class-Specification.pdf" label="SDS13782: Z-Wave Management Command Class Specification">
+    <property key="category" value="Z-Wave Specifications"/>
+    <property key="priority" value="5"/>
+    <description>Z-Wave Management Command Class Specification</description>
+  </contentItemData>
+
+  <contentItemData itemURI="https://www.silabs.com/documents/login/miscellaneous/SDS13783-Z-Wave-Transport-Encapsulation-Command-Class-Specification.pdf" label="SDS13783: Z-Wave Transport-Encapsulation Command Class Specification">
+    <property key="category" value="Z-Wave Specifications"/>
+    <property key="priority" value="6"/>
+    <description>Z-Wave Transport-Encapsulation Command Class Specification</description>
+  </contentItemData>
+
+  <contentItemData itemURI="https://www.silabs.com/documents/login/miscellaneous/SDS13784-Z-Wave-Network-Protocol-Command-Class-Specification.pdf" label="SDS13784: Z-Wave Network-Protocol Command Class Specification">
+    <property key="category" value="Z-Wave Specifications"/>
+    <property key="priority" value="7"/>
+    <description>Z-Wave Network-Protocol Command Class Specification</description>
+  </contentItemData>
+
+  <contentItemData itemURI="https://www.silabs.com/documents/login/miscellaneous/SDS14223-Z-Wave-Command-Class-Control-Specification.pdf" label="SDS14223: Z-Wave Command Class Control Specification">
+    <property key="category" value="Z-Wave Specifications"/>
+    <property key="priority" value="8"/>
+    <description>Z-Wave Command Class Control Specification</description>
+  </contentItemData>
+  <!-- end of Z-Wave Plus v2 specification documents -->
+
+  <!-- SDK documents for End Devices-->
+  <!-- Only zgm130 and EFR32ZG13P modules will see this -->
+  <contentItemData itemURI="INS14278.pdf" label="INS14278">
+    <property key="category" value="End Device"/>
+    <property key="priority" value="1"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.* .*efr32zg13p531f512gm32.* .*efr32zg13p531f512gm48.*"/>
+    <description>How to Use Certified Apps</description>
+  </contentItemData>
+
+  <contentItemData itemURI="INS14280.pdf" label="INS14280">
+    <property key="category" value="End Device"/>
+    <property key="priority" value="2"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.* .*efr32zg13p531f512gm32.* .*efr32zg13p531f512gm48.*"/>
+    <description>Getting Started for End Devices</description>
+  </contentItemData>
+
+  <contentItemData itemURI="SRN14629.pdf" label="SRN14629">
+    <property key="category" value="End Device"/>
+    <property key="priority" value="3"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.* .*efr32zg13p531f512gm32.* .*efr32zg13p531f512gm48.*"/>
+    <description>Z-Wave 700 SDK 7.13.x</description>
+  </contentItemData>
+
+  <contentItemData itemURI="INS14487.pdf" label="INS14487">
+    <property key="category" value="End Device"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.* .*efr32zg13p531f512gm32.* .*efr32zg13p531f512gm48.*"/>
+    <description>Z-Wave 700 Integration Guide</description>
+  </contentItemData>
+
+  <contentItemData itemURI="INS14283.pdf" label="INS14283">
+    <property key="category" value="End Device"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.* .*efr32zg13p531f512gm32.* .*efr32zg13p531f512gm48.*"/>
+    <description>Bring-up/test HW development</description>
+  </contentItemData>
+
+  <contentItemData itemURI="INS14259.pdf" label="INS14259">
+    <property key="category" value="End Device"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.* .*efr32zg13p531f512gm32.* .*efr32zg13p531f512gm48.*"/>
+    <description>Z-Wave Plus V2 Application Framework SDK 7</description>
+  </contentItemData>
+
+  <contentItemData itemURI="APL14440.pdf" label="APL14440">
+    <property key="category" value="End Device"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.* .*efr32zg13p531f512gm32.* .*efr32zg13p531f512gm48.*"/>
+    <description>Porting Appl. SW from Z-Wave 500 to Z-Wave 700</description>
+  </contentItemData>
+
+  <contentItemData itemURI="DSH14297.pdf" label="DSH14297">
+    <property key="category" value="End Device"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <description>User Guide Z-Wave 700 radio board with ZGM130S. BRD4200A</description>
+  </contentItemData>
+
+  <contentItemData itemURI="DSH14299.pdf" label="DSH14299">
+    <property key="category" value="End Device"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <description>Datasheet ZGM130S SIP Module</description>
+  </contentItemData>
+
+  <contentItemData itemURI="DSH14476.pdf" label="DSH14476">
+    <property key="category" value="End Device"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <description>User Guide Z-Wave 700 radio board with ZGM130S - without SAW filter. BRD4202</description>
+  </contentItemData>
+
+  <contentItemData itemURI="PHD14492.zip" label="PHD14492">
+    <property key="category" value="End Device"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <description>Development Material for Z-Wave 700 radio board with ZGM130S. BRD4200A</description>
+  </contentItemData>
+
+  <contentItemData itemURI="PHD14494.zip" label="PHD14494">
+    <property key="category" value="End Device"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <description>Development Material for Z-Wave 700 radio board with ZGM130S - without SAW filter. BRD4202A</description>
+  </contentItemData>
+
+  <contentItemData itemURI="SDS14306.pdf" label="SDS14306">
+    <property key="category" value="End Device"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.* .*efr32zg13p531f512gm32.* .*efr32zg13p531f512gm48.*"/>
+    <description>Z-Wave 700 User/Lock bits Page Contents</description>
+  </contentItemData>
+
+  <contentItemData itemURI="SRN13757.pdf" label="SRN13757">
+    <property key="category" value="End Device"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.* .*efr32zg13p531f512gm32.* .*efr32zg13p531f512gm48.*"/>
+    <description>Z-Wave PC based Controller (SRN)</description>
+  </contentItemData>
+
+  <contentItemData itemURI="INS13114.pdf" label="INS13114">
+    <property key="category" value="End Device"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.* .*efr32zg13p531f512gm32.* .*efr32zg13p531f512gm48.*"/>
+    <description>Z-Wave PC based Controller v5 User Guide</description>
+  </contentItemData>
+
+  <contentItemData itemURI="ERN13758.pdf" label="ERN13758">
+    <property key="category" value="End Device"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.* .*efr32zg13p531f512gm32.* .*efr32zg13p531f512gm48.*"/>
+    <description>Z-Wave PC based Controller (ERN)</description>
+  </contentItemData>
+
+  <contentItemData itemURI="INS10249.pdf" label="INS10249">
+    <property key="category" value="End Device"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.* .*efr32zg13p531f512gm32.* .*efr32zg13p531f512gm48.*"/>
+    <description>Z-Wave Zniffer User Guide</description>
+  </contentItemData>
+
+  <contentItemData itemURI="SRN13233.pdf" label="SRN13233">
+    <property key="category" value="End Device"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.* .*efr32zg13p531f512gm32.* .*efr32zg13p531f512gm48.*"/>
+    <description>Z-Wave Zniffer (SRN)</description>
+  </contentItemData>
+
+  <contentItemData itemURI="ERN13236.pdf" label="ERN13236">
+    <property key="category" value="End Device"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.* .*efr32zg13p531f512gm32.* .*efr32zg13p531f512gm48.*"/>
+    <description>Z-Wave Zniffer (ERN)</description>
+  </contentItemData>
+
+  <contentItemData itemURI="RailTestUserGuide.html" label="Using RAIL Test">
+    <property key="category" value="End Device"/>
+    <property key="core.partCompatibility" value=".*zgm130s037hgn.* .*efr32zg13p531f512gm32.* .*efr32zg13p531f512gm48.*"/>
+    <description>Describes the functionality available in the RAIL Test application</description>
+  </contentItemData>
+
+  <!-- End of SDK documents for End Devices-->
+
+  <!-- SDK documents for Gateways/Controllers -->
+  <!-- Both ZG14 and zgm130s037hgn modules will see this, with the exception of datasheets -->
+  <contentItemData itemURI="../../../../../zwave/zip_gateway/v7.13.1/" label="Z/IP Gateway SDK v7.13.1">
+    <property key="category" value="Gateway"/>
+    <property key="priority" value="1"/>
+    <description>Z/IP Gateway Software Development Kit</description>
+  </contentItemData>
+
+  <contentItemData itemURI="../../../../../zwave/zware/v7.13.1/" label="Z-Ware SDK v7.13.1">
+    <property key="category" value="Gateway"/>
+    <property key="priority" value="1"/>
+    <description>SDK for Z-Wave controller middleware running over Z-Wave over IP (Z/IP) interface as a Web Gateway</description>
+  </contentItemData>
+
+  <contentItemData itemURI="../../../../../zwave/zip_gateway/v7.13.Beta0/" label="Z/IP Gateway SDK v7.13.Beta0">
+    <property key="category" value="Gateway"/>
+    <property key="priority" value="2"/>
+    <description>Z/IP Gateway Software Development Kit</description>
+  </contentItemData>
+
+  <contentItemData itemURI="../../../../../zwave/zware/v7.13.Beta0/" label="Z-Ware SDK v7.13.Beta0">
+    <property key="category" value="Gateway"/>
+    <property key="priority" value="2"/>
+    <description>SDK for Z-Wave controller middleware running over Z-Wave over IP (Z/IP) interface as a Web Gateway</description>
+  </contentItemData>
+
+  <contentItemData itemURI="INS14281.pdf" label="INS14281">
+    <property key="category" value="Gateway"/>
+    <property key="priority" value="4"/>
+    <description>Getting Started for Controller Devices</description>
+  </contentItemData>
+
+  <contentItemData itemURI="SRN14629.pdf" label="SRN14629">
+    <property key="category" value="Gateway"/>
+    <property key="priority" value="5"/>
+    <property key="core.partCompatibility" value="mcu.arm.efr32.zg14.*"/>
+    <description>Z-Wave 700 SDK 7.13.x</description>
+  </contentItemData>
+
+  <contentItemData itemURI="INS14283.pdf" label="INS14283">
+    <property key="category" value="Gateway"/>
+    <description>Bring-up/test HW development</description>
+  </contentItemData>
+
+  <contentItemData itemURI="DSH14300.pdf" label="DSH14300">
+    <property key="category" value="Gateway"/>
+    <property key="core.partCompatibility" value="mcu.arm.efr32.zg14.*"/>
+    <description>Datasheet EFR32ZG14 Modem SoC</description>
+  </contentItemData>
+
+  <contentItemData category="Gateway" itemURI="DSH14483.pdf" label="DSH14483">
+    <property key="category" value="Gateway"/>
+    <property key="core.partCompatibility" value="mcu.arm.efr32.zg14.*"/>
+    <description>UZB-7 — Worldwide Z-Wave 700 USB stick bridge module</description>
+  </contentItemData>
+
+  <contentItemData itemURI="DSH14477.pdf" label="DSH14477">
+    <property key="core.partCompatibility" value="mcu.arm.efr32.zg14.*"/>
+    <property key="category" value="Gateway"/>
+    <description>User Guide Z-Wave 700 radio board with EFR32ZG14. BRD4201A</description>
+  </contentItemData>
+
+  <contentItemData itemURI="PHD14493.zip" label="PHD14493">
+    <property key="category" value="Gateway"/>
+    <property key="core.partCompatibility" value="mcu.arm.efr32.zg14.*"/>
+    <description>Development Material for Z-Wave 700 radio board with EFR32ZG14. BRD4201A</description>
+  </contentItemData>
+
+  <contentItemData itemURI="INS14498.pdf" label="INS14498">
+    <property key="category" value="Gateway"/>
+    <property key="core.partCompatibility" value="mcu.arm.efr32.zg14.*"/>
+    <description>Instruction for Mandatory crystal adjustment for EFR32ZG14 based products</description>
+  </contentItemData>
+
+  <contentItemData itemURI="SDS14306.pdf" label="SDS14306">
+    <property key="category" value="Gateway"/>
+    <description>Z-Wave 700 User/Lock bits Page Contents</description>
+  </contentItemData>
+
+  <contentItemData itemURI="PHD14501.zip" label="PHD14501">
+    <property key="category" value="Gateway"/>
+    <description>Development Material for UZB-7</description>
+  </contentItemData>
+
+  <contentItemData itemURI="RailTestUserGuide.html" label="Using RAIL Test">
+    <property key="category" value="Gateway"/>
+    <description>Describes the functionality available in the RAIL Test application</description>
+  </contentItemData>
+
+  <contentItemData itemURI="UZB-7P1.rar" label="UZB-7P1">
+    <property key="category" value="Gateway"/>
+    <description>PCB documentation for UZB-7 PCB</description>
+  </contentItemData>
+  <!-- End of SDK documents for Gateways/Controllers -->
+
+  <!-- SDK documents for Production -->
+  <contentItemData itemURI="INS14284.pdf" label="INS14284">
+    <property key="category" value="Production"/>
+    <description>Prepare for Z-Wave Certification tests</description>
+  </contentItemData>
+
+  <contentItemData itemURI="INS14285.pdf" label="INS14285">
+    <property key="category" value="Production"/>
+    <description>Manufacture Z-Wave 700 product in volume</description>
+  </contentItemData>
+  <!-- End of SDK documents for Production -->
+
+  <!-- Serial API OTW files -->
+  <contentItemData itemURI="../Apps/bin/gbl/" label="Serial API signed binaries">
+    <property key="category" value="Serial API signed binaries"/>
+    <description>Serial API OTW files</description>
+  </contentItemData>
+
+</contentItems>

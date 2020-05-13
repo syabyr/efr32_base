@@ -1,0 +1,17 @@
+green-power-device {
+  name=Green Power Device
+  dir=green-power-device
+  isc=green-power-device/gpd.isc
+  include=.internal_hwconfig
+  include=gpd-callbacks.c
+  This is a Green Power Device.
+}
+
+green-power-sensor {
+  name=Green Power Sensor 
+  dir=green-power-sensor
+  isc=green-power-sensor/gpd.isc
+  include=.internal_hwconfig
+  include=gpd-callbacks.c
+  This is a Green Power Sensor Device that reports periodically
+}

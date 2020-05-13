@@ -1,0 +1,214 @@
+# Internal Test Application
+
+mustang {
+  category=Connect Examples
+  name=Connect (SoC): Mustang
+  dir=mustang-app/
+  isc=mustang-app/mustang-app.isc
+  architecture=efr32~family[B]~series[1]~!module,efr32~family[F]~series[1]~!module,efr32~family[M]~series[1]~!module,simulation
+  include=simulation/flex-callbacks.c, .internal_hwconfig
+  This internal application provides extensive hooks and commands for testing purposes.
+}
+
+mustang-dmp {
+  name=Connect (SoC): Mustang-DMP
+  category=Connect Examples
+  dir=mustang-app/
+  isc=mustang-app/mustang-app-dmp.isc
+  architecture=efr32~family[B]~series[1]~!module,efr32~family[F]~series[1]~!module,efr32~family[M]~series[1]~!module,simulation
+  include=simulation/flex-callbacks.c, .internal_hwconfig
+  This internal application provides extensive hooks and commands for testing purposes.
+}
+
+# SoC Applications
+
+empty {
+  name=Connect (SoC): Empty Example
+  category=Connect Examples
+  dir=empty/
+  isc=empty/empty.isc
+  architecture=efr32~family[B]~series[1]~!module,efr32~family[F]~series[1]~!module,efr32~family[M]~series[1]~!module,simulation
+  A minimal Connect project structure, used as a starting point for custom applications.
+}
+
+empty-dmp {
+  name=Connect (SoC): Empty Example - DMP
+  category=Connect Examples
+  dir=empty-dmp/
+  isc=empty-dmp/empty-dmp.isc
+  architecture=efr32~family[B]~series[1]~device_configuration[2]~!module,efr32~family[B]~series[1]~device_configuration[3]~!module,efr32~family[M]~series[1]~device_configuration[2]~!module,efr32~family[M]~series[1]~device_configuration[3]~!module,simulation
+  include=flex-callbacks.c
+  A dynamic multiprotocol minimal project structure, used as a starting point for custom applications that run Connect and BLE protocols simultaneously.
+  By default, only the bare minimum plugins and emberAfMainInitCallback are enabled.
+  For customization options regarding plugins, callbacks and events, see UG235.04.
+}
+
+commissioned-device {
+  category=Connect Examples
+  name=Connect (SoC): Commissioned Device
+  dir=commissioned-device/
+  isc=commissioned-device/commissioned-device.isc
+  architecture=efr32~family[B]~series[1]~!module,efr32~family[F]~series[1]~!module,efr32~family[M]~series[1]~!module,simulation
+  include=flex-callbacks.c, .internal_hwconfig
+  This application demonstrates direct communication between nodes in
+  range. The network parameters are commissioned by the application.
+}
+
+connect-light {
+  name=Connect (SoC): Demo Connect Light
+  category=Connect Examples
+  dir=connect-light/
+  isc=connect-light/connect-light.isc
+  architecture=efr32~family[B]~series[1]~!module,efr32~family[F]~series[1]~!module,efr32~family[M]~series[1]~!module,simulation
+  include=flex-callbacks.c, .internal_hwconfig, application, ../common/application
+  This is a sample application demonstrating a light application that can be turned on/off by a switch application. This application is part of the Connect Light/Switch demo setup.
+}
+
+dmp-connect-switch {
+  name=Connect (SoC): Demo DMP Connect Switch
+  category=Connect Examples
+  dir=dmp-connect-switch/
+  isc=dmp-connect-switch/dmp-connect-switch.isc
+  architecture=efr32~family[B]~series[1]~device_configuration[2]~!module,efr32~family[B]~series[1]~device_configuration[3]~!module,efr32~family[M]~series[1]~device_configuration[2]~!module,efr32~family[M]~series[1]~device_configuration[3]~!module,simulation
+  include=flex-callbacks.c, .internal_hwconfig, application, ../common/application
+  This is a sample application demonstrating a switch application using dynamic multiprotocol (Connect + BLE). This application is part of the Connect Light/Switch demo setup.
+}
+
+mac-device {
+  category=Connect Examples
+  name=Connect (SoC): MAC Mode Device
+  dir=mac-device/
+  isc=mac-device/mac-device.isc
+  architecture=efr32~family[B]~series[1]~!module,efr32~family[F]~series[1]~!module,efr32~family[M]~series[1]~!module,simulation
+  include=flex-callbacks.c, .internal_hwconfig
+  This application demonstrates standard 802.15.4 communication between nodes in
+  range.
+}
+
+sensor {
+  category=Connect Examples
+  name=Connect (SoC): Sensor
+  dir=sensor-sink/sensor
+  isc=sensor-sink/sensor/sensor.isc
+  architecture=efr32~family[B]~series[1]~!module,efr32~family[F]~series[1]~!module,efr32~family[M]~series[1]~!module,simulation
+  include=flex-callbacks.c, .internal_hwconfig
+  This application demonstrates a star network topology setup.
+  Bi-directional communication is possible between the sensor(s) and the sink nodes.
+}
+
+sink {
+  category=Connect Examples
+  name=Connect (SoC): Sink
+  dir=sensor-sink/sink
+  isc=sensor-sink/sink/sink.isc
+  architecture=efr32~family[B]~series[1]~!module,efr32~family[F]~series[1]~!module,efr32~family[M]~series[1]~!module,simulation
+  include=flex-callbacks.c, .internal_hwconfig
+  This application demonstrates a star network topology setup.
+  Bi-directional communication is possible between the sensor(s) and the sink nodes.
+}
+
+wire-replacement {
+  category=Connect Examples
+  name=Connect (SoC): Wire-Replacement
+  dir=wire-replacement/
+  isc=wire-replacement/wire-replacement.isc
+  architecture=efr32~family[B]~series[1]~!module,efr32~family[F]~series[1]~!module,efr32~family[M]~series[1]~!module,simulation
+  include=flex-callbacks.c, .internal_hwconfig
+  This application demonstrates point to point bi-directional direct or
+  indirect communication between two nodes.
+}
+
+
+# Host Applications
+
+commissioned-device-host {
+  category=Connect Examples
+  name=Connect (Host): Commissioned Device
+  dir=commissioned-device/
+  isc=commissioned-device/commissioned-device-host.isc
+  architecture=unix,simulation
+  include=flex-callbacks.c
+  This application demonstrates direct communication between nodes in
+  range. The network parameters are commissioned by the application.
+  It runs on Unix UART Host, with EFR32 NCP.
+}
+
+empty-host {
+  name=Connect (Host): Empty Example
+  dir=empty/
+  isc=empty/empty-host.isc
+  architecture=unix,simulation
+  A minimal Connect project structure, used as a starting point for custom applications.
+  It runs on Unix UART Host, with EFR32 NCP.
+}
+
+mac-device-host {
+  category=Connect Examples
+  name=Connect (Host): MAC Mode Device
+  dir=mac-device/
+  isc=mac-device/mac-device-host.isc
+  architecture=efr32~family[B]~series[1]~!module,efr32~family[F]~series[1]~!module,efr32~family[M]~series[1]~!module,simulation
+  include=flex-callbacks.c
+  This application demonstrates standard 802.15.4 communication between nodes in
+  range.
+  It runs on Unix UART Host, with EFR32 NCP.
+}
+
+sensor-host {
+  category=Connect Examples
+  name=Connect (Host): Sensor
+  dir=sensor-sink/sensor
+  isc=sensor-sink/sensor/sensor-host.isc
+  architecture=unix,simulation
+  include=flex-callbacks.c
+  This application demonstrates a star network topology setup.
+  Bi-directional communication is possible between the sensor(s) and the sink nodes.
+  It runs on Unix UART Host, with EFR32 NCP.
+}
+
+sink-host {
+  category=Connect Examples
+  name=Connect (Host): Sink
+  dir=sensor-sink/sink
+  isc=sensor-sink/sink/sink-host.isc
+  architecture=unix,simulation
+  include=flex-callbacks.c
+  This application demonstrates a star network topology setup.
+  Bi-directional communication is possible between the sensor(s) and the sink nodes.
+  It runs on Unix UART Host, with EFR32 NCP
+}
+
+wire-replacement-host {
+  category=Connect Examples
+  name=Connect (Host): Wire-Replacement
+  dir=wire-replacement/
+  isc=wire-replacement/wire-replacement-host.isc
+  architecture=unix,simulation
+  include=flex-callbacks.c
+  This application demonstrates point to point bi-directional direct or
+  indirect communication between two nodes. It runs on Unix UART Host, with EFR32 NCP.
+}
+
+# NCP Applications
+
+ncp-uart-hw {
+  category=Connect Examples
+  name=Connect (NCP): UART HW (Hardware Flow Control)
+  dir=ncp/ncp-uart-hw
+  isc=ncp/ncp-uart-hw/ncp-uart-hw.isc
+  architecture=efr32~family[B]~series[1]~!module,efr32~family[F]~series[1]~!module,efr32~family[M]~series[1]~!module,simulation
+  include=.internal_hwconfig
+  This network coprocessor (NCP) application supports communication with
+  a host application over a UART interface with hardware flow control.
+}
+
+ncp-uart-sw {
+  category=Connect Examples
+  name=Connect (NCP): UART SW (Software Flow Control)
+  dir=ncp/ncp-uart-sw
+  isc=ncp/ncp-uart-sw/ncp-uart-sw.isc
+  architecture=efr32~family[B]~series[1]~!module,efr32~family[F]~series[1]~!module,efr32~family[M]~series[1]~!module,simulation
+  include=.internal_hwconfig
+  This network coprocessor (NCP) application supports communication with
+  a host application over a UART interface with software flow control.
+}

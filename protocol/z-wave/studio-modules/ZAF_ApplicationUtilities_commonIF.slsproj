@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project id="com.silabs.sdk.exx32.zwave.ZAF.ApplicationUtilities.commonIF" label="Z-Wave ZAF ApplicationUtilities commonIF" contentRoot="$(sdkInstallationPath:default())/protocol/z-wave/ZAF/ApplicationUtilities/_commonIF">
+  <property key="category" value="efm32|Z-wave"/>
+  <folder name="ZAF_ApplicationUtilities_commonIF" uri="." includeAllFiles="true" />
+  <includePath uri="." />
+</project>

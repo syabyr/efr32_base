@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project id="com.silabs.sdk.exx32.zwave.ZAF.ApplicationUtilities.TrueStatusEngine" label="Z-Wave ZAF ApplicationUtilities TrueStatusEngine" contentRoot="$(sdkInstallationPath:default())/protocol/z-wave/ZAF/ApplicationUtilities/TrueStatusEngine">
+  <property key="category" value="efm32|Z-wave"/>
+  <folder name="ZAF_ApplicationUtilities_TrueStatusEngine" uri="." includeAllFiles="true" />
+  <includePath uri="." />
+</project>

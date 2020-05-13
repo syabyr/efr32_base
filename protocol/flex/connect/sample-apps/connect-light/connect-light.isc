@@ -1,0 +1,183 @@
+#ISD afv6
+# ISD version: 4.18.1.qualifier
+
+# Application configuration
+appId: flex
+frameworkRoot: protocol/flex_dev/connect
+architecture: efr32~family[M]~series[1]~device_configuration[1]~performance[P]~radio[233]~flash[256K]~temp[G]~package[M]~pins[48]~!module+BRD4150B+iar
+deviceName: connect-light
+generationDirectory: PATH(ISC_RELATIVE):.
+
+# Devices
+
+# Plugin configuration
+appPlugin: antenna-stub=true
+appPlugin: ash-v3=false
+appPlugin: bootloader-interface=false
+appPlugin: buffer-pool-memory-manager=false
+appPlugin: circular-queue=false
+appPlugin: command-interpreter=true
+appPlugin: command-interpreter-rail=false
+appPlugin: csp-host=false
+appPlugin: csp-ncp=false
+appPlugin: debug-print=true
+appPlugin: diagnostic=true
+appPlugin: diagnostic-stub=false
+appPlugin: free-rtos=false
+appPlugin: dmp-demo-ui=true
+appPlugin: frequency-hopping=false
+appPlugin: hal=true
+appPlugin: hal-config=true
+appPlugin: hal-efr32=false
+appPlugin: heartbeat=true
+appPlugin: host-network-management-cli=false
+appPlugin: idle-sleep=false
+appPlugin: lcd-graphics=true
+appPlugin: mailbox-client=false
+appPlugin: mailbox-server=false
+appPlugin: main=true
+appPlugin: ncp-main=false
+appPlugin: mbedtls=true
+appPlugin: ncp-uart-link=false
+appPlugin: ota-bootloader-test-common=false
+appPlugin: ota-broadcast-bootloader-client=false
+appPlugin: ota-broadcast-bootloader-server=false
+appPlugin: ota-broadcast-bootloader-test=false
+appPlugin: ota-unicast-bootloader-client=false
+appPlugin: ota-unicast-bootloader-server=false
+appPlugin: ota-unicast-bootloader-test=false
+appPlugin: packet-trace=false
+appPlugin: rail-library=true
+appPlugin: poll=true
+appPlugin: railtest-base=false
+appPlugin: rangetest-base=false
+appPlugin: response-printf=false
+appPlugin: serial=true
+appPlugin: serial-bootloader-cli=false
+appPlugin: sim-eeprom1=true
+appPlugin: spi-flash=false
+appPlugin: stack-aes-security=true
+appPlugin: stack-common=true
+appPlugin: stack-counters=true
+appPlugin: stack-mac-queue=true
+appPlugin: stack-parent-support=true
+appPlugin: stack-xxtea-security=false
+appPlugin: unix-library=false
+appPlugin: usb-cdc=false
+appPlugin: usb-common=false
+appPlugin: usb-hidkbd=false
+appPlugin: wstk-sensors=false
+
+# Setup configurations
+{setupId:additionalFiles
+}
+{setupId:boardHeader
+allowMissingHeader:false
+useHeaderInPlace:false
+efr32~family[M]~series[1]~device_configuration[1]~performance[P]~radio[233]~flash[256K]~temp[G]~package[M]~pins[48]+BRD4150B=USE_HARDWARE_CONFIGURATOR,,,
+}
+{setupId:bookkeeping
+}
+{setupId:bootloader
+efr32~series[1]~device_configuration[1]=null,
+efr32~series[1]~device_configuration[2]=null,
+efr32~series[1]~device_configuration[3]=null,
+efr32~series[1]~device_configuration[4]=null,
+}
+{setupId:callbackConfiguration
+emberIncomingMessageHandler:true
+emberMessageSentHandler:true
+emberStackStatusHandler:true
+emberChildJoinHandler:true
+emberAfMainInitCallback:false
+emberAfMainTickCallback:false
+emberAfStackStatusCallback:false
+emberAfIncomingMessageCallback:false
+emberAfMessageSentCallback:false
+emberAfChildJoinCallback:false
+emberAfEnergyScanCompleteCallback:false
+emberAfPluginMicriumRtosAppTask1InitCallback:false
+emberAfPluginMicriumRtosAppTask1MainLoopCallback:false
+}
+{setupId:commandLineConfiguration
+on
+start-master,startMasterCommand,u,unlocked
+set-tx-power,setTxPowerCommand,s,unlocked
+set-tx-options,setTxOptionsCommand,u,unlocked
+leave,emberResetNetworkState,,unlocked
+data,dataCommand,b,unlocked
+info,infoCommand,,unlocked
+reset,halReboot,,unlocked
+start-energy-scan,startEnergyScanCommand,uu,unlocked
+}
+{setupId:connectStackConfig
+Radio board: BRD4502
+}
+{setupId:debugConfiguration
+on
+area name off
+appSerial=1
+}
+{setupId:multiPhyRadioConfigurator
+<?xml version="1.0" encoding="UTF-8"?>
+<multi_phy_configuration part_family="dumbo" part_revision="A0" rail_adapter_version="rail_api_2.x" status_code="0" xsd_version="0.0.13">
+  <base_channel_configurations>
+    <base_channel_configuration name="Protocol Configuration" profile="serializableObject:Efr32RadioConfiguratorProfile:DUMBO:Connect">
+      <phy name="serializableObject:Efr32RadioConfiguratorPhy:DUMBO:Connect:PHY_Connect_902MHz_2GFSK_200kbps"/>
+      <channel_config_entries>
+        <channel_config_entry name="Channel Group 1">
+          <physical_channel_offset>0</physical_channel_offset>
+          <channel_number_start>0</channel_number_start>
+          <channel_number_end>20</channel_number_end>
+          <max_power>RAIL_TX_POWER_MAX</max_power>
+        </channel_config_entry>
+      </channel_config_entries>
+    </base_channel_configuration>
+  </base_channel_configurations>
+</multi_phy_configuration>
+}
+{setupId:eventConfiguration
+lcdDirectionDisplayEventControl,lcdDirectionDisplayEventHandler
+responseTimeoutTmrEventControl,responseTimeoutTmrEventHandler
+sendRetryTmrEventControl,sendRetryTmrEventHandler
+permitJointTimeoutEventControl,permitJointTimeoutEventHandler
+}
+{setupId:genConfig
+}
+{setupId:hwConfig
+featureLevel=1
+active=true
+}
+{setupId:information
+\{key:description
+The  Connect Light application helps demonstrate the dynamic multiprotocol feature from Silabs. This application only uses Connect and is not a dynamic multiprotocol application itself. This application is to be used with the DMP Connect Switch sample to demonstrate the control of a dynamic multiprotocol device from a Connect network.
+
+The Demo is set up to run on the WSTK6000B Mesh Development Kit. The Demo makes use of the LCD display, LEDs, and buttons on the WSTK.
+
+The Light is configured to host a Connect network as a coordinator and allow other devices to join. A help screen is shown on the LCD display to assist the user to form, permit join and control the Light. A complementary application named DMP Connect Switch is available to run on a WSTK board and join the network formed by the Light and control the state of Light via buttons on the WSTK running on the switch application.
+
+Upon startup, a help screen is shown on the LCD display to assist the user to form/permit join and leave the network and to control the Light.
+PB0 - Toggle Light
+PB1 - NWK Control [ No NWK : Form NWK  / NWK : Permit join  / Press > 5s: Leave NWK ]
+
+All application code is contained in the flex-callbacks.c files within each application directory.
+\}
+}
+{setupId:macros
+-DMBEDTLS_CONFIG_FILE="application/mbedtls-security-config.h"
+-DDEVICE_TYPE="Light"
+-DAPP_SECURITY_ENABLE=1
+}
+{setupId:phyOptions
+}
+{setupId:template
+linkerLdFile=$--halDir--$/micro/cortexm3/efm32/gcc-cfg.ld
+}
+{setupId:token
+application=PATH(PROJECT_RELATIVE):application/app-token.h
+}
+
+# UI/Setup customization for multi-phy
+hiddenLayoutElements: radio
+
+pluginOption(efr32): EMBER_AF_PLUGIN_MBEDTLS_APP_HEADER_DEFINED,true

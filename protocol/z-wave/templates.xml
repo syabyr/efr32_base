@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:MDescriptors xmlns:model="http://www.silabs.com/ss/Studio.ecore">
+  <!-- SwitchOnOff -->
+  <descriptors label="SwitchOnOff" description="SwitchOnOff">
+    <properties key="template.category" value="Z-Wave Apps"/>
+    <properties key="template.projectFilePaths" value="./Apps/SwitchOnOff/SimplicityStudio/SwitchOnOff.slsproj"/>
+    <properties key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <properties key="core.toolchainCompatibility" value=".*gn[u].*7.2.*"/>
+    <properties key="template.initiallyOpenedResource" value="src/SwitchOnOff.c"/>
+  </descriptors>
+
+  <!-- SensorPIR -->
+  <descriptors label="SensorPIR" description="SensorPIR">
+    <properties key="template.category" value="Z-Wave Apps"/>
+    <properties key="template.projectFilePaths" value="./Apps/SensorPIR/SimplicityStudio/SensorPIR.slsproj"/>
+    <properties key="core.partCompatibility" value=".*zgm130s037hgn.* .*efr32zg13p531f512gm32.*"/>
+    <properties key="core.toolchainCompatibility" value=".*gn[u].*7.2.*"/>
+    <properties key="template.initiallyOpenedResource" value="src/SensorPIR.c"/>
+  </descriptors>
+
+  <!-- DoorLock keypad -->
+  <descriptors label="DoorLockKeyPad" description="DoorLockKeyPad">
+    <properties key="template.category" value="Z-Wave Apps"/>
+    <properties key="template.projectFilePaths" value="./Apps/DoorLockKeyPad/SimplicityStudio/DoorLockKeyPad.slsproj"/>
+    <properties key="core.partCompatibility" value=".*zgm130s037hgn.* .*efr32zg13p531f512gm48.*"/>
+    <properties key="core.toolchainCompatibility" value=".*gn[u].*7.2.*"/>
+    <properties key="template.initiallyOpenedResource" value="src/DoorLockKeyPad.c"/>
+  </descriptors>
+
+  <!-- PowerStrip -->
+  <descriptors label="PowerStrip" description="PowerStrip">
+    <properties key="template.category" value="Z-Wave Apps"/>
+    <properties key="template.projectFilePaths" value="./Apps/PowerStrip/SimplicityStudio/PowerStrip.slsproj"/>
+    <properties key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <properties key="core.toolchainCompatibility" value=".*gn[u].*7.2.*"/>
+    <properties key="template.initiallyOpenedResource" value="src/PowerStrip.c"/>
+  </descriptors>
+
+  <!-- Wall Controller -->
+  <descriptors label="WallController" description="WallController">
+    <properties key="template.category" value="Z-Wave Apps"/>
+    <properties key="template.projectFilePaths" value="./Apps/WallController/SimplicityStudio/WallController.slsproj"/>
+    <properties key="core.partCompatibility" value=".*zgm130s037hgn.*"/>
+    <properties key="core.toolchainCompatibility" value=".*gn[u].*7.2.*"/>
+    <properties key="template.initiallyOpenedResource" value="src/WallController.c"/>
+  </descriptors>
+</model:MDescriptors>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.DeviceResetLocally" label="Z-Wave ZAF CommandClasses DeviceResetLocally" contentRoot="$(sdkInstallationPath:default())/protocol/z-wave/ZAF/CommandClasses/DeviceResetLocally">
+  <property key="category" value="efm32|Z-wave"/>
+  <folder name="ZAF_CommandClasses_DeviceResetLocally" uri="." includeAllFiles="true" />
+  <includePath uri="." />
+</project>

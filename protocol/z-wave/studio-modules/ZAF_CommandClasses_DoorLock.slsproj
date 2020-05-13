@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.DoorLock" label="Z-Wave ZAF CommandClasses DoorLock" contentRoot="$(sdkInstallationPath:default())/protocol/z-wave/ZAF/CommandClasses/DoorLock">
+  <property key="category" value="efm32|Z-wave"/>
+  <folder name="ZAF_CommandClasses_DoorLock" uri="." includeAllFiles="true" />
+  <includePath uri="." />
+</project>

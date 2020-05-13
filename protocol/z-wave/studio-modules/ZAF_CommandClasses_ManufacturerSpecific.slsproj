@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project id="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.ManufacturerSpecific" label="Z-Wave ZAF CommandClasses ManufacturerSpecific" contentRoot="$(sdkInstallationPath:default())/protocol/z-wave/ZAF/CommandClasses/ManufacturerSpecific">
+  <property key="category" value="efm32|Z-wave"/>
+  <folder name="ZAF_CommandClasses_ManufacturerSpecific" uri="." includeAllFiles="true" />
+  <includePath uri="." />
+</project>

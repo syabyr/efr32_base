@@ -1,0 +1,158 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<model:MDescriptors xmlns:model="http://www.silabs.com/ss/Studio.ecore">
+
+  <descriptors name="com.silabs.sdk.exx32.zwave.appsign" label="Z-Wave Application Signer" propertyScope="module">
+    <description>Z-Wave Application Signer</description>
+    <properties key="module.clientModelURI" value="./studio-modules/appsign.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+
+  <!-- ZAF modules
+          1. Application Utilities
+          2. Command Classes
+  -->
+
+  <!-- Application Utilities modules-->
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.ApplicationUtilities" label="Z-Wave ZAF ApplicationUtilities" propertyScope="module">
+    <description>Z-Wave ZAF ApplicationUtilities</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_ApplicationUtilities.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.ApplicationUtilities.commonIF" label="Z-Wave ZAF ApplicationUtilities CommonIF" propertyScope="module">
+    <description>Z-Wave ZAF ApplicationUtilities CommonIF</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_ApplicationUtilities_commonIF.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.ApplicationUtilities.EventHandling" label="Z-Wave ZAF ApplicationUtilities EventHandling" propertyScope="module">
+    <description>Z-Wave ZAF ApplicationUtilities EventHandling</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_ApplicationUtilities_EventHandling.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.ApplicationUtilities.PowerManagement" label="Z-Wave ZAF ApplicationUtilities PowerManagement" propertyScope="module">
+    <description>Z-Wave ZAF ApplicationUtilities PowerManagement</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_ApplicationUtilities_PowerManagement.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.ApplicationUtilities.TrueStatusEngine" label="Z-Wave ZAF ApplicationUtilities TrueStatusEngine" propertyScope="module">
+    <description>Z-Wave ZAF ApplicationUtilities TrueStatusEngine</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_ApplicationUtilities_TrueStatusEngine.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <!-- end of Application Utilities modules-->
+
+  <!-- Command Classes modules-->
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.Association" label="Z-Wave ZAF CommandClasses Association" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses Association</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_Association.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.Basic" label="Z-Wave ZAF CommandClasses Basic" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses Basic</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_Basic.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.Battery" label="Z-Wave ZAF CommandClasses Battery" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses Battery</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_Battery.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.BinarySwitch" label="Z-Wave ZAF CommandClasses BinarySwitch" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses BinarySwitch</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_BinarySwitch.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.CentralScene" label="Z-Wave ZAF CommandClasses CentralScene" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses CentralScene</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_CentralScene.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.Common" label="Z-Wave ZAF CommandClasses Common" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses Common</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_Common.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.DeviceResetLocally" label="Z-Wave ZAF CommandClasses DeviceResetLocally" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses DeviceResetLocally</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_DeviceResetLocally.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.DoorLock" label="Z-Wave ZAF CommandClasses DoorLock" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses DoorLock</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_DoorLock.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.FirmwareUpdate" label="Z-Wave ZAF CommandClasses FirmwareUpdate" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses FirmwareUpdate</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_FirmwareUpdate.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.Indicator" label="Z-Wave ZAF CommandClasses Indicator" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses Indicator</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_Indicator.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.ManufacturerSpecific" label="Z-Wave ZAF CommandClasses ManufacturerSpecific" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses ManufacturerSpecific</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_ManufacturerSpecific.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.MultiChan" label="Z-Wave ZAF CommandClasses MultiChan" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses MultiChan</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_MultiChan.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.MultilevelSwitch" label="Z-Wave ZAF CommandClasses MultilevelSwitch" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses MultilevelSwitch</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_MultilevelSwitch.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.Notification" label="Z-Wave ZAF CommandClasses Notification" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses Notification</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_Notification.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.PowerLevel" label="Z-Wave ZAF CommandClasses PowerLevel" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses PowerLevel</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_PowerLevel.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.Security" label="Z-Wave ZAF CommandClasses Security" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses Security</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_Security.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.SimpleAv" label="Z-Wave ZAF CommandClasses SimpleAv" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses SimpleAv</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_SimpleAv.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.Supervision" label="Z-Wave ZAF CommandClasses Supervision" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses Supervision</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_Supervision.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.UserCode" label="Z-Wave ZAF CommandClasses UserCode" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses UserCode</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_UserCode.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.Version" label="Z-Wave ZAF CommandClasses Version" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses Version</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_Version.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.WakeUp" label="Z-Wave ZAF CommandClasses WakeUp" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses WakeUp</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_WakeUp.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.exx32.zwave.ZAF.CommandClasses.ZWavePlusInfo" label="Z-Wave ZAF CommandClasses ZWavePlusInfo" propertyScope="module">
+    <description>Z-Wave ZAF CommandClasses ZWavePlusInfo</description>
+    <properties key="module.clientModelURI" value="./studio-modules/ZAF_CommandClasses_ZWavePlusInfo.slsproj"/>
+    <properties key="module.category" value="efm32|Z-Wave"/>
+  </descriptors>
+  <!-- end of Command Classes modules-->
+
+  <!-- Platform modules -->
+  <!-- end of Platform modules -->
+</model:MDescriptors>

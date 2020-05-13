@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project id="com.silabs.sdk.exx32.zwave.appsign" label="Z-Wave Application Signer" contentRoot="$(sdkInstallationPath:default())/protocol/z-wave/BootLoader/sample-keys">
+  <property key="category" value="efm32|Z-wave"/>
+  <folder name="keys" uri="." includeAllFiles="true" />
+  <postbuildStep>"${CommanderAdapterPackPath}" gbl create "${BuildArtifactFileBaseName}.gbl" --app "${BuildArtifactFileBaseName}.hex" --sign "${StudioSdkPath}/protocol/z-wave/BootLoader/sample-keys/sample_sign.key" --encrypt  "${StudioSdkPath}/protocol/z-wave/BootLoader/sample-keys/sample_encrypt.key"  --compress lz4</postbuildStep>
+</project>

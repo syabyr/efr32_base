@@ -1,0 +1,8 @@
+The Z-Wave 700 SDK v7.13.3 GA release is intended for development of Z-Wave certifiable, 700-based products entering volume production.
+ 
+Key features in this release are as follows:
+1. Z-Wave certified apps; Door Lock Key Pad, Power Strip, Sensor PIR, Switch On/Off & Wall Controller.  
+2. Support for delayed activation in Firmware Update Meta Data Command Class.
+3. Support of ZGM130S version N2 SIP (Ordering code ZGM130S037HGN2).
+
+Notice: The Z Wave 700 SDK v7.13.0 is a beta release and therefore it is not possible to Z-Wave certify, 700-based products using v7.13.0.

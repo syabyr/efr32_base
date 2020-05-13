@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project id="com.silabs.sdk.exx32.zwave.ZAF.ApplicationUtilities" label="Z-Wave ZAF ApplicationUtilities" contentRoot="$(sdkInstallationPath:default())/protocol/z-wave/ZAF/ApplicationUtilities">
+  <property key="category" value="efm32|Z-wave"/>
+  <folder name="ZAF_ApplicationUtilities" uri="." includeAllFiles="true" />
+  <includePath uri="." />
+  <!-- Versioning -->
+  <macroDefinition name="ZAF_BUILD_NO" value="0xAABB" languageCompatibility="c cpp" />
+  <macroDefinition name="ZAF_VERSION_MAJOR" value="10" languageCompatibility="c cpp" />
+  <macroDefinition name="ZAF_VERSION_MINOR" value="13" languageCompatibility="c cpp" />
+  <macroDefinition name="ZAF_VERSION_PATCH" value="3" languageCompatibility="c cpp" />
+  <macroDefinition name="SDK_VERSION_MAJOR" value="7" languageCompatibility="c cpp" />
+  <macroDefinition name="SDK_VERSION_MINOR" value="13" languageCompatibility="c cpp" />
+  <macroDefinition name="SDK_VERSION_PATCH" value="3" languageCompatibility="c cpp" />
+</project>

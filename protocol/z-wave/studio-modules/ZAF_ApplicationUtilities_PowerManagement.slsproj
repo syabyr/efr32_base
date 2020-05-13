@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project id="com.silabs.sdk.exx32.zwave.ZAF.ApplicationUtilities.PowerManagement" label="Z-Wave ZAF ApplicationUtilities PowerManagement" contentRoot="$(sdkInstallationPath:default())/protocol/z-wave/ZAF/ApplicationUtilities/PowerManagement">
+  <property key="category" value="efm32|Z-wave"/>
+  <folder name="ZAF_ApplicationUtilities_PowerManagement" uri="." includeAllFiles="true" />
+  <includePath uri="." />
+</project>
