@@ -25,13 +25,11 @@ add_library(${PROJECT_NAME}
         src/em_i2c.c
         src/em_iadc.c
         src/em_idac.c
-        src/em_int.c
         src/em_lcd.c
         src/em_ldma.c
         src/em_lesense.c
         src/em_letimer.c
         src/em_leuart.c
-        src/em_mpu.c
         src/em_msc.c
         src/em_opamp.c
         src/em_pcnt.c
